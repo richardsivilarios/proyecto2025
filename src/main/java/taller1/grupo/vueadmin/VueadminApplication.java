@@ -13,6 +13,7 @@ import taller1.grupo.vueadmin.common.utils.SpringContextHolder;
  * @author: richard sivila
  * @create: 2021-11-27 11:51
  **/
+/** Modificado **/
 @EnableTransactionManagement
 @SpringBootApplication
 public class VueadminApplication {
