@@ -10,7 +10,7 @@
             flat
             bordered
             ref="tableRef"
-            title="Modulo 1"
+            title="Modulo 1 Modificado"
             :rows="state.tableData"
             :columns="columns"
             row-key="Pedido"
