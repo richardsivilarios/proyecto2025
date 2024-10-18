@@ -1,0 +1,39 @@
+
+{
+
+    "http.proxy": "http://192.168.49.1:8228",
+    "http.proxyStrictSSL": false,
+    "java.debug.settings.console": "internalConsole",
+"java.configuration.runtimes": [
+{
+    "name": "JavaSE-1.8",
+    "path": "C:\\Program Files\\Java\\jdk1.8.0_281",
+    //"path": "C:\\Program Files\\Eclipse Adoptium\\jdk-8.0.422.5-hotspot",
+    //"path": "C:\\Program Files\\Eclipse Adoptium\\jdk-8.0.422.5-hotspot",
+    "default": true
+
+}
+],
+"redhat.telemetry.enabled": true,
+"debug.javascript.defaultRuntimeExecutable": {
+"pwa-node": "node"
+},
+"workbench.colorTheme": "Visual Studio Light",
+"java.debug.settings.exceptionBreakpoint.skipClasses": [
+
+
+
+],
+"java.debug.settings.stepping.skipClasses": [
+],
+"settingsSync.ignoredSettings": [
+
+],
+"workbench.settings.applyToAllProfiles": [
+
+
+],
+"editor.fontSize": 25,
+"maven.settingsFile": "",
+"git.enableSmartCommit": true
+}
