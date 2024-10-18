@@ -1,0 +1,6 @@
+ejecutar el powershell con permisos de administrador
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Editar el archivo adicionar .eslintrc.cjs la siguiente linea:
+
+"vue/multi-word-component-names": "off",
