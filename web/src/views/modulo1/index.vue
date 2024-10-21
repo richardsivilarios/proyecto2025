@@ -27,7 +27,7 @@
                 </template>
               </q-input>
             </template>
-            <template v-slot:body-cell-actions="props">
+      <template v-slot:body-cell-actions="props">
         <q-td :props="props">
           <q-btn @click="onEdit(props.row)" fab-mini dense square outline icon="mode_edit" color="primary" aria-label="Edit" class="q-mr-sm" />
           <q-btn @click="onDelete(props.row)" fab-mini dense square outline icon="delete" color="negative" aria-label="Delete" />
@@ -75,12 +75,20 @@
     field: 'fechapedido', 
     sortable: true, format: val => date.formatDate(val, 'DD-MM-YYYY')   },
 
-    { name: 'fechaenvio', required: true, label: 'fechaenvio', align: 'left', field: 'fechaenvio', sortable: true, format: val => date.formatDate(val, 'DD-MM-YYYY')  },
+    { 
+      name: 'fechaenvio', 
+      required: true, 
+      label: 'fechaenvio', 
+      align: 'left', 
+      field:'fechaenvio', 
+      sortable: true, 
+      format: val => date.formatDate(val, 'DD-MM-YYYY')  
+    },
     { name: 'nombrecompania', required: true, label: 'Nombre de \la Compañia', align: 'left', field: 'nombrecompania', sortable: true },
     { name: 'importeventas', required: true, label: 'importeventas', align: 'left', field: 'importeventas', sortable: true },
     {name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false,},
   ];
-  
+  const dialogVisible = ref(false)
   const loading = ref(false);
   const pagination = ref({
     sortBy: 'nombre',
@@ -136,11 +144,11 @@
     console.log(state);
   });
   const onEdit = (row) => {
-      console.log(`Editing row - JSON.parse(JSON.stringify(scope.row)`)
+      console.log('editar'+row.idpedido)
     }
     
     async function onDelete(prop) {
-    console.log(prop.idpedido);
+    console.log('eliminar'+prop.idpedido);
   }
   </script>
   

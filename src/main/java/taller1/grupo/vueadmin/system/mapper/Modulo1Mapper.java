@@ -9,9 +9,13 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import taller1.grupo.vueadmin.system.entity.dto.Modulo1top10Dto;
+import taller1.grupo.vueadmin.system.entity.dto.Modulo1top10DClientesDto;
 
 @Repository
 public interface Modulo1Mapper extends BaseMapper<Modulo1top10Dto> {
     @Select("SELECT * FROM northwind.\"Diez mejores pedidos por importe de ventas\"")
     IPage<Modulo1top10Dto> queryModulo1Table(Page<?> page, @Param("blurry") String blurry);
+
+    @Select("SELECT * FROM northwind.\"Detalles de clientes\"")
+    IPage<Modulo1top10DClientesDto> queryModulo1DClientesTable(Page<?> page, @Param("blurry") String blurry);
 }

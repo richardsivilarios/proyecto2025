@@ -10,6 +10,7 @@ import taller1.grupo.vueadmin.constant.CommonConstants;
 import taller1.grupo.vueadmin.system.entity.Clientes;
 import taller1.grupo.vueadmin.system.entity.dto.QueryDto;
 import taller1.grupo.vueadmin.system.entity.dto.ClientesDto;
+import taller1.grupo.vueadmin.system.entity.dto.Clientes2Dto;
 import taller1.grupo.vueadmin.system.mapper.ClientesMapper;
 import taller1.grupo.vueadmin.system.service.ClientesService;
 import lombok.RequiredArgsConstructor;
@@ -62,14 +63,50 @@ public class ClientesServiceImpl implements ClientesService {
 
     }
 
+    private void checkClientes2(Clientes2Dto clientes2Dto) {
+        LambdaQueryWrapper<Clientes> wrapper = new LambdaQueryWrapper<>();
+
+        if (clientes2Dto.getId() != null) {
+            wrapper.ne(Clientes::getId, clientes2Dto.getId());
+        }
+        if (StringUtil.isNotBlank(clientes2Dto.getNombre()) && StringUtil.isNotBlank(clientes2Dto.getApellidos())) {
+            wrapper.and(w -> w.eq(Clientes::getNombre, clientes2Dto.getNombre()).or().eq(Clientes::getApellidos,
+                    clientes2Dto.getApellidos()));
+        }
+        long count = clientesMapper.selectCount(wrapper);
+        if (count > 0) {
+            throw new BadRequestException("El nombre de cliente Por favor vuelve a entrar");
+        }
+
+    }
+
     @Override
-    public void editClientes(ClientesDto clientesDto) {
-        checkClientes(clientesDto);
-
+    public void editClientes(Clientes2Dto clientes2Dto) {
+        checkClientes2(clientes2Dto);
         Clientes clientes = new Clientes();
-
-        clientes.setCompania(clientesDto.getCompania());
-        clientes.setNombre(clientesDto.getNombre());
+        clientes.setId(clientes2Dto.getId());
+        clientes.setCompania(clientes2Dto.getCompania());
+        clientes.setApellidos(clientes2Dto.getApellidos());
+        clientes.setNombre(clientes2Dto.getNombre());
+        clientes.setDirecciónDeCorreoElectrónico(clientes2Dto.getDirecciónDeCorreoElectrónico());
+        clientes.setCargo(clientes2Dto.getCargo());
+        clientes.setTeléfonoDelTrabajo(clientes2Dto.getTelefonoDelTrabajo());
+        clientes.setTeléfonoParticular(clientes2Dto.getTelefonoParticular());
+        clientes.setTeléfonoMóvil(clientes2Dto.getTelefonoMóvil());
+        clientes.setNúmeroDeFax(clientes2Dto.getNumeroDeFax());
+        clientes.setDirección(clientes2Dto.getDireccinn());
+        clientes.setCiudad(clientes2Dto.getCiudad());
+        clientes.setEstadoOProvincia(clientes2Dto.getEstadoOProvincia());
+        clientes.setCPostal(clientes2Dto.getCPostal());
+        clientes.setPaísORegión(clientes2Dto.getPaisORegion());
+        clientes.setPáginaWeb(clientes2Dto.getPaginaWeb());
+        clientes.setNotas(clientes2Dto.getNotas());
+        clientes.setDatosAdjuntos(clientes2Dto.getDatosAdjuntos());
+        if (clientes.getId() != null) {
+            clientesMapper.updateById(clientes);
+        } else {
+            clientesMapper.insert(clientes);
+        }
     }
 
 }

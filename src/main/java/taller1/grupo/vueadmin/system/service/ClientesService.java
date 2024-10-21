@@ -1,6 +1,7 @@
 package taller1.grupo.vueadmin.system.service;
 
 import taller1.grupo.vueadmin.system.entity.Clientes;
+import taller1.grupo.vueadmin.system.entity.dto.Clientes2Dto;
 import taller1.grupo.vueadmin.system.entity.dto.ClientesDto;
 import taller1.grupo.vueadmin.system.entity.dto.QueryDto;
 
@@ -13,5 +14,5 @@ public interface ClientesService {
 
     public IPage<ClientesDto> queryClientesTable(QueryDto queryDto);
 
-    void editClientes(ClientesDto clientesDto);
+    void editClientes(Clientes2Dto clientes2Dto);
 }

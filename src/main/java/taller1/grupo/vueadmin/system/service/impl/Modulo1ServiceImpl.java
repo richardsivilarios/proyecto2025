@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import lombok.RequiredArgsConstructor;
+import taller1.grupo.vueadmin.system.entity.dto.Modulo1top10DClientesDto;
 import taller1.grupo.vueadmin.system.entity.dto.Modulo1top10Dto;
 import taller1.grupo.vueadmin.system.entity.dto.QueryDto;
 import taller1.grupo.vueadmin.system.service.Modulo1Service;
@@ -22,6 +23,14 @@ public class Modulo1ServiceImpl implements Modulo1Service {
         page.setCurrent(queryDto.getCurrentPage());
         page.setSize(queryDto.getSize());
         return modulo1Mapper.queryModulo1Table(page, queryDto.getBlurry());
+    }
+
+    @Override
+    public IPage<Modulo1top10DClientesDto> queryModulo1DClientesTable(QueryDto queryDto) {
+        Page<Modulo1top10Dto> page = new Page<>();
+        page.setCurrent(queryDto.getCurrentPage());
+        page.setSize(queryDto.getSize());
+        return modulo1Mapper.queryModulo1DClientesTable(page, queryDto.getBlurry());
     }
 
 }

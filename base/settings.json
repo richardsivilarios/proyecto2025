@@ -1,8 +1,8 @@
 
 {
 
-    "http.proxy": "http://192.168.49.1:8228",
-    "http.proxyStrictSSL": false,
+    // "http.proxy": "http://192.168.49.1:8228",
+    //"http.proxyStrictSSL": false,
     "java.debug.settings.console": "internalConsole",
 "java.configuration.runtimes": [
 {
