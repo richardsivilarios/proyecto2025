@@ -39,6 +39,7 @@ public class modulo1Controller extends ResultUtil {
     @GetMapping("/modulo1/tabledclientes")
     public ResponseEntity<Object> queryModulo1DclientesTable(QueryDto queryDto) {
         try {
+            System.out.println(modulo1Service.queryModulo1DClientesTable(queryDto));
             return success(true, modulo1Service.queryModulo1DClientesTable(queryDto));
         } catch (BadRequestException e) {
             return fail(false, e.getMsg());
@@ -50,6 +51,9 @@ public class modulo1Controller extends ResultUtil {
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<Object> editCliente(@RequestBody Clientes2Dto clientes2dto) {
         try {
+            System.out.println("valor del Id" + clientes2dto.getId());
+            System.out.println(clientesService.getClientesByClientesId(clientes2dto.getId()));
+
             String tag = StringUtil.getEditType(clientes2dto.getId());
             clientesService.editClientes(clientes2dto);
             return success(true, tag);

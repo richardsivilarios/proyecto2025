@@ -7,24 +7,12 @@
 
       <q-card-section>
         <q-form @submit="submitForm">
-          <q-input v-model="state.form.id" label="Id" :disable="true" />
+          <q-input v-model="state.form.idcliente" label="Id" :disable="true" />  <!-- Campo Id deshabilitado -->
           <q-input v-model="state.form.compania" label="Compañía" />
           <q-input v-model="state.form.apellidos" label="Apellidos" />
           <q-input v-model="state.form.nombre" label="Nombre" />
-          <q-input v-model="state.form.email" label="Dirección de correo electrónico" />
-          <q-input v-model="state.form.cargo" label="Cargo" />
-          <q-input v-model="state.form.telefonoTrabajo" label="Teléfono del trabajo" />
-          <q-input v-model="state.form.telefonoParticular" label="Teléfono particular" />
-          <q-input v-model="state.form.telefonoMovil" label="Teléfono móvil" />
-          <q-input v-model="state.form.numeroFax" label="Número de fax" />
-          <q-input v-model="state.form.direccion" label="Dirección" />
-          <q-input v-model="state.form.ciudad" label="Ciudad" />
-          <q-input v-model="state.form.estadoProvincia" label="Estado o provincia" />
-          <q-input v-model="state.form.codigoPostal" label="Código Postal" />
-          <q-input v-model="state.form.paisRegion" label="País o región" />
-          <q-input v-model="state.form.paginaWeb" label="Página Web" />
-          <q-input v-model="state.form.notas" label="Notas" type="textarea" />
-          <q-input v-model="state.form.datosAdjuntos" label="Datos adjuntos" type="textarea" />
+          <q-input v-model="state.form.numerofax" label="Numero fax" />
+          <!-- ...otros campos del formulario... -->
         </q-form>
       </q-card-section>
 
@@ -37,16 +25,18 @@
 </template>
 
 <script setup>
-import { ref, reactive, computed } from 'vue';
-import {errorMsg, successMsg} from "../../../utils/message";
-import {resetForm} from "../../../utils/common";
+import { ref, reactive, computed, watch } from 'vue';
+
 const props = defineProps({
   dialogVisible: {
     type: Boolean,
     required: true,
     default: false
   },
-  clienteObj: Object
+  clienteObj: {  // Recibe el cliente seleccionado
+    type: Object,
+    default: () => ({})
+  }
 });
 
 const emit = defineEmits(['update:dialogVisible', 'get-list']);
@@ -59,7 +49,7 @@ const visible = computed({
 const state = reactive({
   title: 'Editar Cliente',
   form: {
-    id: null,
+    idcliente: null,
     compania: '',
     apellidos: '',
     nombre: '',
@@ -80,19 +70,26 @@ const state = reactive({
   }
 });
 
+// Observa los cambios en el cliente seleccionado
+watch(() => props.clienteObj, (newCliente) => {
+  if (newCliente && newCliente.idcliente) {
+    openFun();  // Actualiza los datos del formulario
+  }
+});
+
 const openFun = () => {
-  if (props.clienteObj.id) {
+  if (props.clienteObj.idcliente) {
     state.title = 'Editar Cliente';
-    state.form = { ...props.clienteObj };  // Asigna el objeto recibido a los campos del formulario
+    state.form = { ...props.clienteObj };  // Asigna los datos del cliente al formulario
   }
 };
 
-
 const submitForm = () => {
-  emit('get-list', state.form);
+  emit('get-list', state.form);  // Envía los datos actualizados
   visible.value = false;
 };
 </script>
+
 <style>
 .myClass {
   max-width: 1200px;

@@ -143,6 +143,7 @@ public class SysRoleServiceImpl implements SysRoleService {
     @Override
     public List<SysRole> getRoleByUserId(Long userId) {
         return roleMapper.getRoleByUserId(userId);
+
     }
 
     /**

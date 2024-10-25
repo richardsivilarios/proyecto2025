@@ -9,9 +9,11 @@ import lombok.Getter;
 @Setter
 @Getter
 public class Modulo1top10DClientesDto {
-    private Long idpedido;
-    private Date fechapedido;
-    private float importeventas;
-    private String nombrecompania;
-    private Date fechaenvio;
+    private Long idcliente;
+    private String compania;
+    private String nombre;
+    private String apellidos;
+    private String cargo;
+    private String telefonotrabajo;
+    private String numerofax;
 }

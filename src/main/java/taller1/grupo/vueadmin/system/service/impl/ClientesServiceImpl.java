@@ -109,4 +109,9 @@ public class ClientesServiceImpl implements ClientesService {
         }
     }
 
+    @Override
+    public List<Clientes> getClientesByClientesId(Long clientesId) {
+        return clientesMapper.getClientesByClientesId(clientesId);
+    }
+
 }

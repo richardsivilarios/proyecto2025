@@ -13,13 +13,14 @@
             title="Modulo 1 Modificado"
             :rows="state.tableData"
             :columns="columns"
-            row-key="Pedido"
+            row-key="state.tableData[0]"
             v-model:pagination="pagination"
             :loading="loading"
             :filter="state.blurry"
             binary-state-sort
             @request="onRequest"
           >
+          <!--busqueda-->
             <template v-slot:top-right>
               <q-input borderless dense debounce="300" v-model="state.blurry" placeholder="Buscar">
                 <template v-slot:append>
@@ -27,12 +28,14 @@
                 </template>
               </q-input>
             </template>
-      <template v-slot:body-cell-actions="props">
+      <!--CRUD-->
+    <!--  <template v-slot:body-cell-actions="props">
         <q-td :props="props">
           <q-btn @click="onEdit(props.row)" fab-mini dense square outline icon="mode_edit" color="primary" aria-label="Edit" class="q-mr-sm" />
           <q-btn @click="onDelete(props.row)" fab-mini dense square outline icon="delete" color="negative" aria-label="Delete" />
         </q-td>
       </template>
+      -->
           </q-table>
           <q-pagination
             v-model="pagination.page"
@@ -86,7 +89,7 @@
     },
     { name: 'nombrecompania', required: true, label: 'Nombre de \la Compañia', align: 'left', field: 'nombrecompania', sortable: true },
     { name: 'importeventas', required: true, label: 'importeventas', align: 'left', field: 'importeventas', sortable: true },
-    {name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false,},
+    /*{name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false,},*/
   ];
   const dialogVisible = ref(false)
   const loading = ref(false);
@@ -143,12 +146,12 @@
     console.log('estado modulo1');
     console.log(state);
   });
-  const onEdit = (row) => {
+  /* const onEdit = (row) => {
       console.log('editar'+row.idpedido)
     }
     
     async function onDelete(prop) {
     console.log('eliminar'+prop.idpedido);
-  }
+  }*/
   </script>
   

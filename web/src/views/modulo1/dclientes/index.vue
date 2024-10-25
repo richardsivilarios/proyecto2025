@@ -13,12 +13,13 @@
           title="Detalle de Clientes"
           :rows="state.tableData"
           :columns="columns"
-          row-key="Pedido"
+          row-key="idcliente"
           v-model:pagination="pagination"
           :loading="loading"
           :filter="state.blurry"
           binary-state-sort
           @request="onRequest"
+          :visible-columns="visibleColumns"
         >
           <template v-slot:top-right>
             <q-input borderless dense debounce="300" v-model="state.blurry" placeholder="Buscar">
@@ -44,9 +45,9 @@
       <!-- Diálogo de edición -->
       <edit-dialog 
         v-model="dialogVisible"
-        :cliente="state.selectedCliente"
-        @refresh-table="getModulo1DClientesTableFun"
-      />
+        :clienteObj="state.selectedCliente"
+        @get-list="getModulo1DClientesTableFun"
+      ></edit-dialog>
     </q-page-container>
   </q-layout>
 </template>
@@ -55,9 +56,7 @@
 import { ref, reactive, onMounted } from 'vue';
 import { getModulo1DClientesTable } from '../../../api/modulo1/modulo1';
 import { errorMsg } from '../../../utils/message';
-import { date } from 'quasar';
 import EditDialog from './editDClientes.vue';
-import { editCliente } from '../../../api/modulo1/modulo1';
 
 const state = reactive({
   blurry: '',
@@ -69,14 +68,18 @@ const state = reactive({
 });
 
 const columns = [
-  { name: 'idpedido', label: 'Mi Id de Pedido', align: 'center', field: 'idpedido', sortable: true },
-  { name: 'fechapedido', label: 'Fecha de pedido', align: 'left', field: 'fechapedido', sortable: true, format: val => date.formatDate(val, 'DD-MM-YYYY') },
-  { name: 'importeventas', label: 'Importe ventas', align: 'left', field: 'importeventas', sortable: true },
-  { name: 'nombrecompania', label: 'Nombre de la Compañia', align: 'left', field: 'nombrecompania', sortable: true },
-  { name: 'fechaenvio', label: 'Fecha de envio', align: 'left', field: 'fechaenvio', sortable: true, format: val => date.formatDate(val, 'DD-MM-YYYY') },
-  { name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false }
+  { name: 'idcliente', label: 'Mi Id Cliente', align: 'center', field: 'idcliente', sortable: true },
+  { name: 'compania', label: 'Compania', align: 'left', field: 'compania', sortable: true},
+  { name: 'nombre', label: 'Nombre', align: 'left', field: 'nombre', sortable: true},
+  { name: 'apellidos', label: 'Apellidos', align: 'left', field: 'apellidos', sortable: true },
+  { name: 'cargo', label: 'Cargo', align: 'left', field: 'cargo', sortable: true},
+  { name: 'telefonotrabajo', label: 'Telefono Trabajo', align: 'left', field: 'telefonotrabajo', sortable: true},
+  { name: 'numerofax', label: 'Numero de Fax', align: 'left', field: 'numerofax', sortable: true},
+  
+  { name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false,},
 ];
 
+const visibleColumns = ref(['idcliente','compania','telefonotrabajo','actions']);
 const dialogVisible = ref(false);
 const loading = ref(false);
 const pagination = ref({
@@ -97,6 +100,8 @@ const getModulo1DClientesTableFun = () => {
     loading.value = false;
     if (res.success) {
       state.tableData = res.data.records;
+      console.log('datos');
+      console.log(state.tableData);
       state.total = res.data.total;
     } else {
       errorMsg(res.msg);
@@ -117,22 +122,17 @@ const onRequest = (props) => {
   getModulo1DClientesTableFun();
 };
 
-const onEdit = async (row) => {
-  try {
-    // Asume que 'row.id' contiene el ID del cliente
-    console.log('devuelto row');
-    console.log(row);
-    const { data } = await editCliente({ id: row.idpedido });  // Cambia 'idpedido' si el campo es diferente
-    state.selectedCliente = { ...data };  // Asigna los datos del cliente al estado
-    dialogVisible.value = true;  // Muestra el diálogo de edición
-  } catch (error) {
-    console.error('Error al cargar los datos del cliente:', error);
+const onEdit = (row) => {
+  if (!row || !row.idcliente) {
+    console.error('Fila inválida o ID de cliente no encontrado:', row);
+    return;
   }
+  state.selectedCliente = { ...row };
+  dialogVisible.value = true;
 };
 
-
 const onDelete = (row) => {
-  console.log('Deleting row', row.idpedido);
+  console.log('Deleting row', row.idcliente);
 };
 
 onMounted(() => {

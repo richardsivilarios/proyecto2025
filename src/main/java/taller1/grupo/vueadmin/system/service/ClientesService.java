@@ -15,4 +15,7 @@ public interface ClientesService {
     public IPage<ClientesDto> queryClientesTable(QueryDto queryDto);
 
     void editClientes(Clientes2Dto clientes2Dto);
+
+    // es un nombre definido
+    public List<Clientes> getClientesByClientesId(Long clientesId);
 }

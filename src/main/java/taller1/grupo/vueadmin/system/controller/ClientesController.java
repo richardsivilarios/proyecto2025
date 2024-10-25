@@ -48,6 +48,8 @@ public class ClientesController extends ResultUtil {
     @PostMapping("/clientes/edit")
     public ResponseEntity<Object> editClientes(@RequestBody ClientesDto clientesDto) {
         try {
+            System.out.println("id cliente" + clientesDto.getId());
+
             String str = StringUtil.getEditType(clientesDto.getId());
             /*
              * if (userDto.getEnabled() == null) {
@@ -56,7 +58,7 @@ public class ClientesController extends ResultUtil {
              * userDto.setEnabled(true);
              * }
              */
-            clientesService.editClientes(clientesDto);
+            // clientesService.editClientes(clientesDto);
             return success(true, str);
         } catch (BadRequestException e) {
             return fail(false, e.getMsg());
