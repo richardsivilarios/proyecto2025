@@ -13,7 +13,7 @@
           title="Detalle de Clientes"
           :rows="state.tableData"
           :columns="columns"
-          row-key="idcliente"
+          row-key="idcliente"  // define la PK
           v-model:pagination="pagination"
           :loading="loading"
           :filter="state.blurry"

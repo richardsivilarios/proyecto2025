@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref, reactive, computed, watch } from 'vue';
-
+import { editCliente } from '../../../api/modulo1/modulo1';
 const props = defineProps({
   dialogVisible: {
     type: Boolean,
@@ -86,7 +86,20 @@ const openFun = () => {
 
 const submitForm = () => {
   emit('get-list', state.form);  // Envía los datos actualizados
+
   visible.value = false;
+  console.log('se presiono aceptar');
+  editCliente(state.form) .then(res => {
+    if (res.success) {
+     
+      console.log('los datos se guardaron correctamente');
+    } else {
+      errorMsg(res.msg);
+    }
+
+  } ).catch(() => {
+    loading.value = false;
+  });
 };
 </script>
 

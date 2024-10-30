@@ -82,7 +82,7 @@ public class ClientesServiceImpl implements ClientesService {
 
     @Override
     public void editClientes(Clientes2Dto clientes2Dto) {
-        checkClientes2(clientes2Dto);
+        // checkClientes2(clientes2Dto);
         Clientes clientes = new Clientes();
         clientes.setId(clientes2Dto.getId());
         clientes.setCompania(clientes2Dto.getCompania());

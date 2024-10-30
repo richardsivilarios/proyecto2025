@@ -26,6 +26,7 @@ export function getModulo1DClientesTable(params){
     })
 }
 
+// defino la funcion asociada al methodo en spring
 // editar el cliente 
 export function editCliente(data){
     return request({
