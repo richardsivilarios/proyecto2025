@@ -50,7 +50,7 @@ public class ClientesServiceImpl implements ClientesService {
         LambdaQueryWrapper<Clientes> wrapper = new LambdaQueryWrapper<>();
 
         if (clientesDto.getId() != null) {
-            wrapper.ne(Clientes::getId, clientesDto.getId());
+            wrapper.ne(Clientes::getIdcliente, clientesDto.getId());
         }
         if (StringUtil.isNotBlank(clientesDto.getNombre()) && StringUtil.isNotBlank(clientesDto.getApellidos())) {
             wrapper.and(w -> w.eq(Clientes::getNombre, clientesDto.getNombre()).or().eq(Clientes::getApellidos,
@@ -66,17 +66,24 @@ public class ClientesServiceImpl implements ClientesService {
     private void checkClientes2(Clientes2Dto clientes2Dto) {
         LambdaQueryWrapper<Clientes> wrapper = new LambdaQueryWrapper<>();
 
-        if (clientes2Dto.getId() != null) {
-            wrapper.ne(Clientes::getId, clientes2Dto.getId());
+        if (clientes2Dto.getIdcliente() != null) {
+            wrapper.ne(Clientes::getIdcliente, clientes2Dto.getIdcliente());
         }
-        if (StringUtil.isNotBlank(clientes2Dto.getNombre()) && StringUtil.isNotBlank(clientes2Dto.getApellidos())) {
-            wrapper.and(w -> w.eq(Clientes::getNombre, clientes2Dto.getNombre()).or().eq(Clientes::getApellidos,
-                    clientes2Dto.getApellidos()));
-        }
-        long count = clientesMapper.selectCount(wrapper);
-        if (count > 0) {
-            throw new BadRequestException("El nombre de cliente Por favor vuelve a entrar");
-        }
+        /*
+         * if (StringUtil.isNotBlank(clientes2Dto.getNombre()) &&
+         * StringUtil.isNotBlank(clientes2Dto.getApellidos())) {
+         * wrapper.and(w -> w.eq(Clientes::getNombre,
+         * clientes2Dto.getNombre()).or().eq(Clientes::getApellidos,
+         * clientes2Dto.getApellidos()));
+         * }
+         */
+        /*
+         * long count = clientesMapper.selectCount(wrapper);
+         * if (count > 0) {
+         * throw new
+         * BadRequestException("El nombre de cliente Por favor vuelve a entrar");
+         * }
+         */
 
     }
 
@@ -84,7 +91,7 @@ public class ClientesServiceImpl implements ClientesService {
     public void editClientes(Clientes2Dto clientes2Dto) {
         checkClientes2(clientes2Dto);
         Clientes clientes = new Clientes();
-        clientes.setId(clientes2Dto.getId());
+        clientes.setIdcliente(clientes2Dto.getIdcliente());
         clientes.setCompania(clientes2Dto.getCompania());
         clientes.setApellidos(clientes2Dto.getApellidos());
         clientes.setNombre(clientes2Dto.getNombre());
@@ -102,7 +109,7 @@ public class ClientesServiceImpl implements ClientesService {
         clientes.setPáginaWeb(clientes2Dto.getPaginaWeb());
         clientes.setNotas(clientes2Dto.getNotas());
         clientes.setDatosAdjuntos(clientes2Dto.getDatosAdjuntos());
-        if (clientes.getId() != null) {
+        if (clientes.getIdcliente() != null) {
             clientesMapper.updateById(clientes);
         } else {
             clientesMapper.insert(clientes);

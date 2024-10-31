@@ -48,13 +48,13 @@ public class modulo1Controller extends ResultUtil {
 
     @Log("Editar Cliente")
     @PostMapping("/modulo1/edit")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_DOCENTE')")
     public ResponseEntity<Object> editCliente(@RequestBody Clientes2Dto clientes2dto) {
         try {
-            System.out.println("valor del Id" + clientes2dto.getId());
-            System.out.println(clientesService.getClientesByClientesId(clientes2dto.getId()));
+            System.out.println("valor del Id" + clientes2dto.getIdcliente());
+            // System.out.println(clientesService.getClientesByClientesId(clientes2dto.getIdcliente()));
 
-            String tag = StringUtil.getEditType(clientes2dto.getId());
+            String tag = StringUtil.getEditType(clientes2dto.getIdcliente());
             clientesService.editClientes(clientes2dto);
             return success(true, tag);
         } catch (BadRequestException e) {

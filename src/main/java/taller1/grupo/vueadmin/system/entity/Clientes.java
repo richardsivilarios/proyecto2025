@@ -17,7 +17,7 @@ import lombok.Setter;
 public class Clientes {
 
     @TableId(value = "\"Id\"", type = IdType.AUTO)
-    private Long id;
+    private Long idcliente;
 
     @TableField("\"Compañía\"")
     private String compania;

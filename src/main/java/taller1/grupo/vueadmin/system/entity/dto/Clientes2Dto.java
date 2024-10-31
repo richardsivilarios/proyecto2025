@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Clientes2Dto {
-    private Long id;
+    private Long idcliente;
 
     private String compania;
 
