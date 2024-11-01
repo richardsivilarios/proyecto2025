@@ -54,7 +54,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from 'vue';
-import { getModulo1DClientesTable } from '../../../api/modulo1/modulo1';
+import { getModulo1DClientesTable,delModulo1 } from '../../../api/modulo1/modulo1';
 import { errorMsg } from '../../../utils/message';
 import EditDialog from './editDClientes.vue';
 
@@ -79,7 +79,7 @@ const columns = [
   { name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false,},
 ];
 
-const visibleColumns = ref(['idcliente','compania','telefonotrabajo','actions']);
+const visibleColumns = ref(['idcliente','apellidos','telefonotrabajo','actions']);
 const dialogVisible = ref(false);
 const loading = ref(false);
 const pagination = ref({
@@ -132,7 +132,17 @@ const onEdit = (row) => {
 };
 
 const onDelete = (row) => {
-  console.log('Deleting row', row.idcliente);
+  console.log('file seleccionada', row.idcliente);
+  delModulo1(row.idcliente).then(res => {
+   // loading.value = false;
+    if (res.success) {
+      console.log('se elimino correctamente')
+    } else {
+      errorMsg('error en el envio de datos');
+    }
+  }).catch(() => {
+    loading.value = false;
+  });
 };
 
 onMounted(() => {

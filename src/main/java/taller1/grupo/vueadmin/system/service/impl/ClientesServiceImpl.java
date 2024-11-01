@@ -8,6 +8,7 @@ import taller1.grupo.vueadmin.common.exception.BadRequestException;
 import taller1.grupo.vueadmin.common.utils.StringUtil;
 import taller1.grupo.vueadmin.constant.CommonConstants;
 import taller1.grupo.vueadmin.system.entity.Clientes;
+import taller1.grupo.vueadmin.system.entity.SysRoleMenu;
 import taller1.grupo.vueadmin.system.entity.dto.QueryDto;
 import taller1.grupo.vueadmin.system.entity.dto.ClientesDto;
 import taller1.grupo.vueadmin.system.entity.dto.Clientes2Dto;
@@ -16,6 +17,7 @@ import taller1.grupo.vueadmin.system.service.ClientesService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -60,6 +62,14 @@ public class ClientesServiceImpl implements ClientesService {
         if (count > 0) {
             throw new BadRequestException("El nombre de cliente Por favor vuelve a entrar");
         }
+
+    }
+
+    private void checkClientes(Long id) {
+        if (clientesMapper.selectById(id).getIdcliente() != null)
+            System.out.println("existe el cliente");
+        else
+            System.out.println("no existe el cliente");
 
     }
 
@@ -119,6 +129,24 @@ public class ClientesServiceImpl implements ClientesService {
     @Override
     public List<Clientes> getClientesByClientesId(Long clientesId) {
         return clientesMapper.getClientesByClientesId(clientesId);
+    }
+
+    @Override
+    public void deleteByClientesId(Long id) {
+        LambdaQueryWrapper<Clientes> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(Clientes::getIdcliente, id);
+        clientesMapper.delete(wrapper);
+    }
+
+    @Override
+    @Transactional
+    public void delClientes(Long id) {
+        // Verificar si el rol ha estado vinculado al usuario
+        checkClientes(id);
+        // Primero elimine el menú vinculado al personaje.
+        this.deleteByClientesId(id);
+        // Eliminar el rol nuevamente
+        clientesMapper.deleteById(id);
     }
 
 }

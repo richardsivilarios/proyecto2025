@@ -2,6 +2,7 @@ package taller1.grupo.vueadmin.system.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -57,6 +58,18 @@ public class modulo1Controller extends ResultUtil {
             String tag = StringUtil.getEditType(clientes2dto.getIdcliente());
             clientesService.editClientes(clientes2dto);
             return success(true, tag);
+        } catch (BadRequestException e) {
+            return fail(false, e.getMsg());
+        }
+    }
+
+    @Log("Eliminar modulo 1")
+    @DeleteMapping("/modulo1/del")
+
+    public ResponseEntity<Object> delModulo1(Long id) {
+        try {
+            clientesService.delClientes(id);
+            return success(true, "Eliminar exitosamente");
         } catch (BadRequestException e) {
             return fail(false, e.getMsg());
         }

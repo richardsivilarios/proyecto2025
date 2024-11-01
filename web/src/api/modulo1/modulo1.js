@@ -35,3 +35,13 @@ export function editCliente(data){
         data
     })
 }
+
+// eliminar 
+export function delModulo1(params){
+    return request({
+        url: '/api/sys/modulo1/del',
+        method: 'delete',
+        params
+    })
+}
+

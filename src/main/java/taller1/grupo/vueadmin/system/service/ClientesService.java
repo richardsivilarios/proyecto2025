@@ -18,4 +18,8 @@ public interface ClientesService {
 
     // es un nombre definido
     public List<Clientes> getClientesByClientesId(Long clientesId);
+
+    public void delClientes(Long id);
+
+    public void deleteByClientesId(Long id);
 }
