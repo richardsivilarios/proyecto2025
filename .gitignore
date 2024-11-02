@@ -5,7 +5,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
-/src/main/java/taller1/grupo/vueadmin/logs
+!**/src/main/java/taller1/grupo/vueadmin/logs
 ### IDE and build tool exclusions ###
 .apt_generated
 .classpath
