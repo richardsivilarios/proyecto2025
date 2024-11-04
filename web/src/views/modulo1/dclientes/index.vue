@@ -133,10 +133,11 @@ const onEdit = (row) => {
 
 const onDelete = (row) => {
   console.log('file seleccionada', row.idcliente);
-  delModulo1(row.idcliente).then(res => {
+  delModulo1({id:row.idcliente}).then(res => {
    // loading.value = false;
     if (res.success) {
-      console.log('se elimino correctamente')
+      console.log('se elimino correctamente');
+      getModulo1DClientesTableFun();
     } else {
       errorMsg('error en el envio de datos');
     }
