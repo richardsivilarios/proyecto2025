@@ -5987,3 +5987,364 @@ java.lang.NullPointerException: Cannot invoke "taller1.grupo.vueadmin.system.ent
 2024-11-04 08:48:27.094 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
 2024-11-04 08:48:27.094 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5c1c2a89, success=true}]
 2024-11-04 08:48:27.100 [http-nio-8415-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:48:46.210 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:48:46.210 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:49:16.223 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:49:16.223 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:49:46.239 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:49:46.239 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:50:16.255 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:50:16.255 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:50:46.262 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:50:46.262 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:51:16.267 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:51:16.274 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:51:46.294 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:51:46.295 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:52:02.989 [http-nio-8415-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:02.998 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:02.999 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.001 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.002 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.003 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.005 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.006 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.007 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.009 [http-nio-8415-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.010 [http-nio-8415-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:03.015 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.021 [http-nio-8415-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.046 [http-nio-8415-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.079 [http-nio-8415-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.091 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:03.094 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@74a1c428, success=true}]
+2024-11-04 08:52:03.097 [http-nio-8415-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:03.116 [http-nio-8415-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.128 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.130 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.131 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.132 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.133 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.135 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.136 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.137 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.138 [http-nio-8415-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.139 [http-nio-8415-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:03.140 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.148 [http-nio-8415-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.171 [http-nio-8415-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.200 [http-nio-8415-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.214 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:03.215 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@4ce15120, success=true}]
+2024-11-04 08:52:03.217 [http-nio-8415-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:03.241 [http-nio-8415-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.253 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.255 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.256 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.257 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.258 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.262 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.264 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.265 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.267 [http-nio-8415-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.267 [http-nio-8415-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:03.269 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.275 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.316 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.338 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.354 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:03.355 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@3f8054ea, success=true}]
+2024-11-04 08:52:03.358 [http-nio-8415-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:03.570 [http-nio-8415-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.579 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.581 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.583 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.588 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.590 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.593 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.607 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.613 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.619 [http-nio-8415-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.620 [http-nio-8415-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:03.622 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.638 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.661 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.684 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.698 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:03.700 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@21ba21e5, success=true}]
+2024-11-04 08:52:03.702 [http-nio-8415-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:03.722 [http-nio-8415-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.733 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.736 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.737 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.738 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.743 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.745 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.748 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.755 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.768 [http-nio-8415-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.774 [http-nio-8415-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:03.776 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.784 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.812 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.837 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.852 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:03.853 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@70ad6062, success=true}]
+2024-11-04 08:52:03.855 [http-nio-8415-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:03.879 [http-nio-8415-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.894 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.901 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.904 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.905 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.908 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.912 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.919 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.921 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.923 [http-nio-8415-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:03.924 [http-nio-8415-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:03.925 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:03.937 [http-nio-8415-exec-5] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.962 [http-nio-8415-exec-5] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:03.989 [http-nio-8415-exec-5] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:04.003 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:04.004 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@6f85141b, success=true}]
+2024-11-04 08:52:04.007 [http-nio-8415-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:16.308 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:52:16.308 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:52:20.469 [http-nio-8415-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/menu/tree
+2024-11-04 08:52:20.485 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.504 [http-nio-8415-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/menu/permission
+2024-11-04 08:52:20.498 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.521 [http-nio-8415-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:20.521 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.525 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.525 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.531 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.533 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.535 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.536 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.537 [http-nio-8415-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/menu/tree
+2024-11-04 08:52:20.539 [http-nio-8415-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/menu/tree", parameters={}
+2024-11-04 08:52:20.540 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getMenuTree()
+2024-11-04 08:52:20.544 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.546 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.551 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.551 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.554 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.554 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.554 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.557 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.557 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.559 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.561 [http-nio-8415-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/menu/permission
+2024-11-04 08:52:20.559 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.567 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.568 [http-nio-8415-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/menu/permission", parameters={}
+2024-11-04 08:52:20.570 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.569 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.570 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.SysMenuController#getPermission()
+2024-11-04 08:52:20.571 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.573 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.573 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.576 [http-nio-8415-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:20.575 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.577 [http-nio-8415-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:20.579 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:20.587 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.595 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.607 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.615 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.622 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.625 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:20.626 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.627 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=[{"children":[{"path":"/user","component":"user/index","name":"GUsuarios","icon":"iconfont ico (truncated)...]
+2024-11-04 08:52:20.628 [http-nio-8415-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:20.637 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:20.638 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=[user:add, user:edit, user:del, menu:add, menu:edit, menu:del, role:add, role:edit, role:autho (truncated)...]
+2024-11-04 08:52:20.640 [http-nio-8415-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:20.691 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.760 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:20.761 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:20.767 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@2dd1373a, success=true}]
+2024-11-04 08:52:20.768 [http-nio-8415-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:24.154 [http-nio-8415-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:24.239 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.239 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.257 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.267 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.276 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.284 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.299 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.301 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.301 [http-nio-8415-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:24.309 [http-nio-8415-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:24.309 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.330 [http-nio-8415-exec-6] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:24.374 [http-nio-8415-exec-6] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:24.393 [http-nio-8415-exec-6] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:24.407 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:24.410 [http-nio-8415-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@2d46c5cf, success=true}]
+2024-11-04 08:52:24.410 [http-nio-8415-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:24.457 [http-nio-8415-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:24.465 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.465 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.471 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.471 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:24.474 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:24.501 [http-nio-8415-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:24.530 [http-nio-8415-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:24.560 [http-nio-8415-exec-7] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:24.574 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:24.576 [http-nio-8415-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@19b63e9d, success=true}]
+2024-11-04 08:52:24.578 [http-nio-8415-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:30.976 [http-nio-8415-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing DELETE /sys/modulo1/del?id=12
+2024-11-04 08:52:30.991 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#delModulo1(Long)
+2024-11-04 08:52:30.994 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#delModulo1(Long)
+2024-11-04 08:52:30.994 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#delModulo1(Long)
+2024-11-04 08:52:30.994 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#delModulo1(Long)
+2024-11-04 08:52:30.997 [http-nio-8415-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured DELETE /sys/modulo1/del?id=12
+2024-11-04 08:52:30.997 [http-nio-8415-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - DELETE "/sys/modulo1/del?id=12", parameters={masked}
+2024-11-04 08:52:31.002 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#delModulo1(Long)
+2024-11-04 08:52:35.410 [http-nio-8415-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager - Creating new transaction with name [taller1.grupo.vueadmin.system.service.impl.ClientesServiceImpl.delClientes]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-11-04 08:52:35.410 [http-nio-8415-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager - Acquired Connection [HikariProxyConnection@1315117553 wrapping org.postgresql.jdbc.PgConnection@306ae14b] for JDBC transaction
+2024-11-04 08:52:35.410 [http-nio-8415-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager - Switching JDBC Connection [HikariProxyConnection@1315117553 wrapping org.postgresql.jdbc.PgConnection@306ae14b] to manual commit
+2024-11-04 08:52:35.432 [http-nio-8415-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager - Initiating transaction commit
+2024-11-04 08:52:35.432 [http-nio-8415-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager - Committing JDBC transaction on Connection [HikariProxyConnection@1315117553 wrapping org.postgresql.jdbc.PgConnection@306ae14b]
+2024-11-04 08:52:35.440 [http-nio-8415-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager - Releasing JDBC Connection [HikariProxyConnection@1315117553 wrapping org.postgresql.jdbc.PgConnection@306ae14b] after transaction
+2024-11-04 08:52:35.441 [http-nio-8415-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:35.449 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:35.449 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=Eliminar exitosamente, success=true}]
+2024-11-04 08:52:35.449 [http-nio-8415-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:41.032 [http-nio-8415-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.126 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.173 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.290 [http-nio-8415-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/table?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.306 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.210 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.360 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.360 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.360 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.360 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.387 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.396 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.396 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.400 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.400 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.400 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.400 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.400 [http-nio-8415-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.400 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.418 [http-nio-8415-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:41.418 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.418 [http-nio-8415-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/table?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.433 [http-nio-8415-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/table?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:41.435 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.435 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.454 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.484 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.523 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.541 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:41.541 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@788b6b24, success=true}]
+2024-11-04 08:52:41.541 [http-nio-8415-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:41.550 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.563 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:41.563 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@181c42e4, success=true}]
+2024-11-04 08:52:41.563 [http-nio-8415-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:41.597 [http-nio-8415-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/table?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.634 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.652 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.660 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.660 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.667 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.667 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.667 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.667 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.667 [http-nio-8415-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/table?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.667 [http-nio-8415-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/table?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:41.675 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.685 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.709 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.720 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:41.721 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@2567b417, success=true}]
+2024-11-04 08:52:41.724 [http-nio-8415-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:41.749 [http-nio-8415-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/table?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.764 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.764 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/table?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.767 [http-nio-8415-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/table?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:41.775 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1Table(QueryDto)
+2024-11-04 08:52:41.830 [http-nio-8415-exec-5] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.898 [http-nio-8415-exec-5] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:41.906 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:41.906 [http-nio-8415-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@f65dc6c, success=true}]
+2024-11-04 08:52:41.915 [http-nio-8415-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:41.941 [http-nio-8415-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:41.958 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.958 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.958 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.958 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.969 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.969 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.990 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.993 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:41.998 [http-nio-8415-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:42.017 [http-nio-8415-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:42.032 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.057 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.122 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.144 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.150 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:42.150 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@68f0d6fa, success=true}]
+2024-11-04 08:52:42.150 [http-nio-8415-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:42.207 [http-nio-8415-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:42.216 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.216 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.216 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:42.236 [http-nio-8415-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:42.244 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.252 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.270 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.297 [http-nio-8415-exec-4] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.319 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:42.319 [http-nio-8415-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5aa0e72, success=true}]
+2024-11-04 08:52:42.319 [http-nio-8415-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:42.415 [http-nio-8415-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:42.458 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.467 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.467 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.487 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.489 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.489 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.489 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.489 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.489 [http-nio-8415-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1
+2024-11-04 08:52:42.489 [http-nio-8415-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/modulo1/tabledclientes?blurry=&size=10&currentPage=1", parameters={masked}
+2024-11-04 08:52:42.534 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.modulo1Controller#queryModulo1DclientesTable(QueryDto)
+2024-11-04 08:52:42.562 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.588 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.609 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-11-04 08:52:42.615 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-11-04 08:52:42.619 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@2e74ebe1, success=true}]
+2024-11-04 08:52:42.619 [http-nio-8415-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2024-11-04 08:52:46.311 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:52:46.312 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-11-04 08:53:16.313 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-11-04 08:53:16.313 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
