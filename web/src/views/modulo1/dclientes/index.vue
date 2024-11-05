@@ -76,7 +76,7 @@ const columns = [
   { name: 'telefonotrabajo', label: 'Telefono Trabajo', align: 'left', field: 'telefonotrabajo', sortable: true},
   { name: 'numerofax', label: 'Numero de Fax', align: 'left', field: 'numerofax', sortable: true},
   
-  { name: 'actions', label: 'Actions', align: 'center', field: 'actions', sortable: false,},
+  { name: 'actions', label: 'Acciones', align: 'center', field: 'actions', sortable: false,},
 ];
 
 const visibleColumns = ref(['idcliente','apellidos','telefonotrabajo','actions']);
