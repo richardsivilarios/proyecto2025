@@ -45,3 +45,13 @@ export function delModulo1(params){
     })
 }
 
+// DETALLE DE PEDIDOS SELECCIONADO POR EL CLIENTE
+//getModulo1DClientesPedidosTable
+export function getModulo1DClientesPedidosTable(idcliente,params){
+    return request({
+        url: '/api/sys/modulo1/tabledclientespedido',
+        method: 'get',
+        idcliente,
+        params
+    })
+}

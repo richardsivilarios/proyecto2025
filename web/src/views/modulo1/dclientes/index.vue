@@ -30,8 +30,10 @@
           </template>
           <template v-slot:body-cell-actions="props">
             <q-td :props="props">
-              <q-btn @click="onEdit(props.row)" fab-mini dense square outline icon="mode_edit" color="primary" aria-label="Edit" class="q-mr-sm" />
-              <q-btn @click="onDelete(props.row)" fab-mini dense square outline icon="delete" color="negative" aria-label="Delete" />
+              <q-btn @click="onEdit(props.row)" fab-mini dense square outline icon="mode_edit" color="primary" aria-label="Editar" class="q-mr-sm" />
+              <q-btn @click="onDelete(props.row)" fab-mini dense square outline icon="delete" color="negative" aria-label="Eliminar" />
+              <q-btn @click="onPedidos(props.row)" fab-mini dense square outline icon="table_view" color="negative" aria-label="Detalle" />
+
             </q-td>
           </template>
         </q-table>
@@ -48,6 +50,11 @@
         :clienteObj="state.selectedCliente"
         @get-list="getModulo1DClientesTableFun"
       ></edit-dialog>
+      <pedido-dialog
+  v-model="pedidoDialogVisible"
+  :cliente-obj="state.selectedCliente"
+  @get-list="getModulo1DClientesPedidosTableFun"
+></pedido-dialog>
     </q-page-container>
   </q-layout>
 </template>
@@ -57,7 +64,12 @@ import { ref, reactive, onMounted } from 'vue';
 import { getModulo1DClientesTable,delModulo1 } from '../../../api/modulo1/modulo1';
 import { errorMsg } from '../../../utils/message';
 import EditDialog from './editDClientes.vue';
+import { useQuasar } from "quasar";
+import PedidoDialog from './pedidoDclientes.vue';
 
+//const pedidoDialogVisible = ref(false);
+
+const $q = useQuasar();
 const state = reactive({
   blurry: '',
   tableData: [],
@@ -80,7 +92,7 @@ const columns = [
 ];
 
 const visibleColumns = ref(['idcliente','apellidos','telefonotrabajo','actions']);
-const dialogVisible = ref(false);
+
 const loading = ref(false);
 const pagination = ref({
   sortBy: 'nombre',
@@ -121,7 +133,7 @@ const onRequest = (props) => {
   state.size = rowsPerPage;
   getModulo1DClientesTableFun();
 };
-
+const dialogVisible = ref(false);
 const onEdit = (row) => {
   if (!row || !row.idcliente) {
     console.error('Fila inválida o ID de cliente no encontrado:', row);
@@ -131,9 +143,28 @@ const onEdit = (row) => {
   dialogVisible.value = true;
 };
 
+
+const pedidoDialogVisible = ref(false);
+
+const onPedidos = (row) => {
+  if (!row || !row.idcliente) {
+    console.error('No envía el idcliente', row);
+    return;
+  }
+  state.selectedCliente = { ...row.idcliente };
+  pedidoDialogVisible.value = true;  // Mostrar el diálogo de pedidos
+};
+
 const onDelete = (row) => {
   console.log('file seleccionada', row.idcliente);
-  delModulo1({id:row.idcliente}).then(res => {
+  $q.dialog({
+        title: 'Confirm',
+        message: 'Esta seguro de borrar?',
+        cancel: true,
+        persistent: true
+      }).onOk(() => {
+        console.log('se borrada');
+        delModulo1({id:row.idcliente}).then(res => {
    // loading.value = false;
     if (res.success) {
       console.log('se elimino correctamente');
@@ -144,7 +175,15 @@ const onDelete = (row) => {
   }).catch(() => {
     loading.value = false;
   });
-};
+        
+      }).onCancel(() => {
+         console.log('cancelado')
+      }).onDismiss(() => {
+        // console.log('I am triggered on both OK and Cancel')
+      });
+  
+  
+  };
 
 onMounted(() => {
   getModulo1DClientesTableFun();

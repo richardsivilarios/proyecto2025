@@ -8,9 +8,9 @@ import taller1.grupo.vueadmin.common.exception.BadRequestException;
 import taller1.grupo.vueadmin.common.utils.StringUtil;
 import taller1.grupo.vueadmin.constant.CommonConstants;
 import taller1.grupo.vueadmin.system.entity.Clientes;
-import taller1.grupo.vueadmin.system.entity.SysRoleMenu;
 import taller1.grupo.vueadmin.system.entity.dto.QueryDto;
 import taller1.grupo.vueadmin.system.entity.dto.ClientesDto;
+import taller1.grupo.vueadmin.system.entity.dto.ClientesProductosDto;
 import taller1.grupo.vueadmin.system.entity.dto.Clientes2Dto;
 import taller1.grupo.vueadmin.system.mapper.ClientesMapper;
 import taller1.grupo.vueadmin.system.service.ClientesService;
@@ -149,4 +149,8 @@ public class ClientesServiceImpl implements ClientesService {
         clientesMapper.deleteById(id);
     }
 
+    public List<ClientesProductosDto> queryModulo1TableClientesPedido(Long id, QueryDto queryDto) {
+        return null;
+
+    }
 }
