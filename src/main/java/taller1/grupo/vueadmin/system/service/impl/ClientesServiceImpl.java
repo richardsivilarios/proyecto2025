@@ -149,8 +149,12 @@ public class ClientesServiceImpl implements ClientesService {
         clientesMapper.deleteById(id);
     }
 
-    public List<ClientesProductosDto> queryModulo1TableClientesPedido(Long id, QueryDto queryDto) {
-        return null;
+    public List<ClientesProductosDto> queryModulo1TableClientesPedido(Long id) {
+        /*
+         * System.out.println("datos pedido");
+         * System.out.println(queryModulo1TableClientesPedido(id));
+         */
+        return clientesMapper.queryModulo1TableClientesPedido(id);
 
     }
 }

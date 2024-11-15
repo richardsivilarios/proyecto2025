@@ -23,5 +23,5 @@ public interface ClientesService {
 
     public void deleteByClientesId(Long id);
 
-    public List<ClientesProductosDto> queryModulo1TableClientesPedido(Long id, QueryDto queryDto);
+    public List<ClientesProductosDto> queryModulo1TableClientesPedido(Long id);
 }

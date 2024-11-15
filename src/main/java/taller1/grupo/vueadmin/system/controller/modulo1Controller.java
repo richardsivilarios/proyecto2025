@@ -85,7 +85,7 @@ public class modulo1Controller extends ResultUtil {
             System.out.println("valor de id:" + id);
             // System.out.println(queryDto);
 
-            return success(true, clientesService.queryModulo1TableClientesPedido(id, queryDto));
+            return success(true, clientesService.queryModulo1TableClientesPedido(id));
         } catch (BadRequestException e) {
             return fail(false, e.getMsg());
         }

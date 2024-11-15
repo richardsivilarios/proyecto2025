@@ -20,7 +20,13 @@ public interface ClientesMapper extends BaseMapper<Clientes> {
     List<Clientes> getClientesByClientesId(@Param("clientesId") Long clientesId);
 
     @Select("SELECT * FROM northwind.\"Resumen de pedidos\" where iddecliente=#{clientesId}")
-    IPage<ClientesProductosDto> queryModulo1TableClientesPedido(@Param("clientesId") Long clientesId, Page<?> page,
-            @Param("blurry") String blurry);
+    List<ClientesProductosDto> queryModulo1TableClientesPedido(@Param("clientesId") Long clientesId);
+    /*
+     * IPage<ClientesProductosDto>
+     * queryModulo1TableClientesPedido(@Param("clientesId") Long clientesId, Page<?>
+     * page,
+     * 
+     * @Param("blurry") String blurry);
+     */
 
 }

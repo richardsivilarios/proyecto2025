@@ -50,6 +50,10 @@
         :clienteObj="state.selectedCliente"
         @get-list="getModulo1DClientesTableFun"
       ></edit-dialog>
+      <q-card-actions align="right">
+        <q-btn flat label="Cancelar" color="negative" @click="visible = false" />
+        <q-btn flat label="Guardar" color="primary" @click="submitForm" />
+      </q-card-actions>
     </q-card>
   </q-dialog>
 </template>
@@ -78,7 +82,7 @@ const getModulo1DClientesPedidosTableFun = () => {
     size: pagination.value.rowsPerPage,
     currentPage: pagination.value.page
   };
-  getModulo1DClientesPedidosTable(props.idcliente, params).then(res => {
+  getModulo1DClientesPedidosTable(props.idcliente).then(res => {
     if (res.success && res.data && res.data.records) {
       state.tableData = res.data.records;
       state.total = res.data.total;

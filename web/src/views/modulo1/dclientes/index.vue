@@ -50,6 +50,7 @@
         :clienteObj="state.selectedCliente"
         @get-list="getModulo1DClientesTableFun"
       ></edit-dialog>
+      <!--pedidos -->
       <pedido-dialog
   v-model="pedidoDialogVisible"
   :cliente-obj="state.selectedCliente"
@@ -165,11 +166,10 @@ const onPedidos = (row) => {
     size: state.size,
     currentPage: pagination.value.page
   };
-  // Llama a la función `getModulo1DClientesPedidosTable` para obtener los datos
-  getModulo1DClientesPedidosTable({id:row.idcliente}).then(response => {
-      if (response.success) {
+  getModulo1DClientesPedidosTable({id:row.idcliente}).then(res => {
+      if (res.success) {
         // Actualiza `selectedCliente` con los datos obtenidos
-        state.selectedCliente = response.data; // Asegúrate de que `response.data` contiene los datos correctos
+        state.selectedCliente = res.data; // Asegúrate de que `response.data` contiene los datos correctos
         pedidoDialogVisible.value = true; // Muestra el diálogo de pedidos
       } else {
         console.error('Error en la respuesta del servidor:', response.message);
