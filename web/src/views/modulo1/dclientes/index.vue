@@ -61,7 +61,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from 'vue';
-import { getModulo1DClientesTable,delModulo1 } from '../../../api/modulo1/modulo1';
+import { getModulo1DClientesPedidosTable,getModulo1DClientesTable,delModulo1 } from '../../../api/modulo1/modulo1';
 import { errorMsg } from '../../../utils/message';
 import EditDialog from './editDClientes.vue';
 import { useQuasar } from "quasar";
@@ -146,13 +146,33 @@ const onEdit = (row) => {
 
 const pedidoDialogVisible = ref(false);
 
-const onPedidos = (row) => {
+/*const onPedidos = (row) => {
   if (!row || !row.idcliente) {
     console.error('No envía el idcliente', row);
     return;
   }
   state.selectedCliente = { ...row.idcliente };
   pedidoDialogVisible.value = true;  // Mostrar el diálogo de pedidos
+};*/
+const onPedidos = (row) => {
+  if (!row || !row.idcliente) {
+    console.error('No se envía el idcliente', row);
+    return;
+  }
+  // Llama a la función `getModulo1DClientesPedidosTable` para obtener los datos
+  getModulo1DClientesPedidosTable(row.idcliente)
+    .then(response => {
+      if (response.success) {
+        // Actualiza `selectedCliente` con los datos obtenidos
+        state.selectedCliente = response.data; // Asegúrate de que `response.data` contiene los datos correctos
+        pedidoDialogVisible.value = true; // Muestra el diálogo de pedidos
+      } else {
+        console.error('Error en la respuesta del servidor:', response.message);
+      }
+    })
+    .catch(error => {
+      console.error('Error en la solicitud de pedidos:', error);
+    });
 };
 
 const onDelete = (row) => {
