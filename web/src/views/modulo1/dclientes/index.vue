@@ -155,13 +155,18 @@ const pedidoDialogVisible = ref(false);
   pedidoDialogVisible.value = true;  // Mostrar el diálogo de pedidos
 };*/
 const onPedidos = (row) => {
+  console.log('idcliente:',row.idcliente);
   if (!row || !row.idcliente) {
     console.error('No se envía el idcliente', row);
     return;
   }
+  const params = {
+    blurry: state.blurry,
+    size: state.size,
+    currentPage: pagination.value.page
+  };
   // Llama a la función `getModulo1DClientesPedidosTable` para obtener los datos
-  getModulo1DClientesPedidosTable(row.idcliente)
-    .then(response => {
+  getModulo1DClientesPedidosTable({id:row.idcliente}).then(response => {
       if (response.success) {
         // Actualiza `selectedCliente` con los datos obtenidos
         state.selectedCliente = response.data; // Asegúrate de que `response.data` contiene los datos correctos

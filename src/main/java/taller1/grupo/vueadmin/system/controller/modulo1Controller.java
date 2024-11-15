@@ -79,8 +79,12 @@ public class modulo1Controller extends ResultUtil {
     /// modulo1/tabledclientespedido
     @Log("Lista los pedidos de un cliente seleccionado")
     @GetMapping("/modulo1/tabledclientespedido")
-    public ResponseEntity<Object> queryModulo1TableClientesPedido(Long id, QueryDto queryDto) {
+    // tabledclientespedido
+    public ResponseEntity<Object> queryModulo1TableClientesPedido(Long id) {
         try {
+            System.out.println("valor de id:" + id);
+            // System.out.println(queryDto);
+
             return success(true, clientesService.queryModulo1TableClientesPedido(id, queryDto));
         } catch (BadRequestException e) {
             return fail(false, e.getMsg());
