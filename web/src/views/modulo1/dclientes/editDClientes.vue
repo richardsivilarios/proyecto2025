@@ -28,14 +28,13 @@
 import { ref, reactive, computed, watch } from 'vue';
 import { editCliente } from '../../../api/modulo1/modulo1';
 const props = defineProps({
-  dialogVisible: {
+  modelValue: {
     type: Boolean,
     required: true,
-    default: false
   },
-  clienteObj: {  // Recibe el cliente seleccionado
+  clienteObj: {
     type: Object,
-    default: () => ({})
+    required: true,
   }
 });
 

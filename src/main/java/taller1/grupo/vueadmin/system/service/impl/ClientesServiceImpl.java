@@ -20,11 +20,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 @RequiredArgsConstructor
 public class ClientesServiceImpl implements ClientesService {
     private final ClientesMapper clientesMapper;
+    private static final Logger logger = LoggerFactory.getLogger(ClientesService.class);
 
     @Override
     public List<Clientes> getClientesList(String blurry) {
@@ -150,10 +153,6 @@ public class ClientesServiceImpl implements ClientesService {
     }
 
     public List<ClientesProductosDto> queryModulo1TableClientesPedido(Long id) {
-        /*
-         * System.out.println("datos pedido");
-         * System.out.println(queryModulo1TableClientesPedido(id));
-         */
         return clientesMapper.queryModulo1TableClientesPedido(id);
 
     }

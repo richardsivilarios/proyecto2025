@@ -15,18 +15,11 @@ import taller1.grupo.vueadmin.system.entity.dto.ClientesProductosDto;
 
 @Repository
 public interface ClientesMapper extends BaseMapper<Clientes> {
+
     IPage<ClientesDto> queryClientesTable(Page<?> page, @Param("blurry") String blurry);
 
     List<Clientes> getClientesByClientesId(@Param("clientesId") Long clientesId);
 
-    @Select("SELECT * FROM northwind.\"Resumen de pedidos\" where iddecliente=#{clientesId}")
-    List<ClientesProductosDto> queryModulo1TableClientesPedido(@Param("clientesId") Long clientesId);
-    /*
-     * IPage<ClientesProductosDto>
-     * queryModulo1TableClientesPedido(@Param("clientesId") Long clientesId, Page<?>
-     * page,
-     * 
-     * @Param("blurry") String blurry);
-     */
-
+    @Select("SELECT * FROM northwind.\"Resumen de pedidos\" where iddecliente=#{id}")
+    List<ClientesProductosDto> queryModulo1TableClientesPedido(@Param("id") Long id);
 }
