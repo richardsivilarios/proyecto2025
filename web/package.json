@@ -16,13 +16,15 @@
     "element-plus": "^2.3.7",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.7.0",
+    "global": "^4.4.0",
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.1.0",
     "quasar": "^2.16.0",
     "quasardesign": "file:",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
-    "web": "file:"
+    "web": "file:",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
