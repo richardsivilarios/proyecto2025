@@ -17,7 +17,7 @@ spring:
     #platform: postgres
     url: 'jdbc:postgresql://localhost:5432/taller12024'
     username: postgres
-    password: celeron
+    password: 5432
 logging:
   level:
     org:

@@ -3,6 +3,7 @@ package taller1.grupo.vueadmin.system.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import taller1.grupo.vueadmin.common.utils.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,9 +23,10 @@ import lombok.Setter;
 @TableName("sys_user")
 public class SysUser extends BaseEntity {
 
-    @TableId(type = IdType.AUTO)
+    // @Id 
+    // @GeneratedValue   en Jakarta
+    @TableId(value="id",type = IdType.AUTO)
     private Long id;
-
     private String username;
 
     private String nickName;

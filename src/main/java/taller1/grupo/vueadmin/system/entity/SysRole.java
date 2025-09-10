@@ -22,7 +22,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @TableName(value = "sys_role")
 public class SysRole extends BaseEntity {
-
+    // @Id  JPA (Jakarta)
+    // @GeneratedValue
     @TableId(type = IdType.AUTO)
     private Long id;
 

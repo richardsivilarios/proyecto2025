@@ -78,7 +78,7 @@ public class SysUserController extends ResultUtil {
      */
     @Log("Eliminar usuario")
     @DeleteMapping("/user/del")
-    public ResponseEntity<Object> delUser(String id) {
+    public ResponseEntity<Object> delUser(Long id) {
         try {
             userService.delUser(id);
             return success(true, "Eliminar exitosamente");

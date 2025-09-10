@@ -57,7 +57,7 @@ public interface SysUserService {
      * @Author: richard sivila
      * @Date: 2024
      */
-    void delUser(String id);
+    void delUser(Long id);
 
     /**
      * @Description: Modificar el estado del usuario

@@ -46,5 +46,5 @@ public interface SysRoleUserService {
      * @Author: richard sivila
      * @Date: 2024
      */
-    void deleteByUserId(String userId);
+    void deleteByUserId(Long userId);
 }

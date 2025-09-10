@@ -86,7 +86,7 @@ public class SysRoleUserServiceImpl implements SysRoleUserService {
      * @Date: 2024
      */
     @Override
-    public void deleteByUserId(String userId) {
+    public void deleteByUserId(Long userId) {
         LambdaQueryWrapper<SysRoleUser> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(SysRoleUser::getUserId, userId);
         roleUserMapper.delete(wrapper);

@@ -1,6 +1,9 @@
 server:
   port: '8415'
 spring:
+  sql:
+    init:
+      mode: always   # ejecuta schema.sql/data.sql siempre al arrancar
   jpa:
     database: postgresql
     generate-ddl: true
@@ -17,7 +20,7 @@ spring:
     # platform: postgres
     url: 'jdbc:postgresql://localhost:5432/taller12024'
     username: postgres
-    password: celeron
+    password: 5432
 logging:
   level:
     org:

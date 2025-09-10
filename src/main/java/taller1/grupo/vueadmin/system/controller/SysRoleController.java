@@ -41,7 +41,7 @@ public class SysRoleController extends ResultUtil {
         }
     }
 
-    @Log("Editar rol")
+    @Log("Editar o inserto un rol")
     @PostMapping("/role/edit")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<Object> editRole(@RequestBody SysRole role) {

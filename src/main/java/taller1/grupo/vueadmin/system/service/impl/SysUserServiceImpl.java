@@ -128,7 +128,7 @@ public class SysUserServiceImpl implements SysUserService {
      */
     @Override
     @Transactional(rollbackFor = BadRequestException.class)
-    public void delUser(String id) {
+    public void delUser(Long id) {
         // Primero desvincule al usuario del rol
         roleUserService.deleteByUserId(id);
         // Eliminar el usuario nuevamente
