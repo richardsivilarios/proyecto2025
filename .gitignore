@@ -1,7 +1,12 @@
 # Backend exclusions
 # Nunca versionar el JDK
-Oracle_JDK-21/
-**/lib/modules
+# JDKs y binarios grandes
+Oracle_JDK-*/
+jdk*/
+*/lib/modules
+*.zip
+*.tar.gz
+*.iso
 
 HELP.md
 target/
