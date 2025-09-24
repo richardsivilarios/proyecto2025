@@ -1,7 +1,6 @@
 package taller1.grupo.vueadmin.system.academico;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

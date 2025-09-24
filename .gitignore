@@ -1,4 +1,7 @@
 # Backend exclusions
+# Nunca versionar el JDK
+Oracle_JDK-21/
+**/lib/modules
 
 HELP.md
 target/

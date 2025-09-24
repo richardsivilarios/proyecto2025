@@ -113,6 +113,11 @@
             <artifactId>guava</artifactId>
             <version>32.1.1-jre</version>
         </dependency>
+        <dependency>
+    <groupId>com.github.yulichang</groupId>
+    <artifactId>mybatis-plus-join-boot-starter</artifactId>
+    <version>1.5.4</version>
+</dependency>
         <!-- JavaCódigo de verificación gráfico -->
         <dependency>
             <groupId>com.github.whvcse</groupId>
@@ -131,6 +136,20 @@
             <artifactId>jaxb-api</artifactId>
             <version>2.4.0-b180830.0359</version>
         </dependency>
+        <dependency>
+    <groupId>com.github.yulichang</groupId>
+    <artifactId>mybatis-plus-join-boot-starter</artifactId>
+    <version>1.5.4</version>
+</dependency>
+<!-- prueba -->
+<dependency>
+    <groupId>com.github.yulichang</groupId>
+    <artifactId>mybatis-plus-join-boot-starter</artifactId>
+    <version>1.5.4</version>
+</dependency>
+
+<!-- prueba-->
+        
     </dependencies>
 
         <!--Embalaje centralizado-->
