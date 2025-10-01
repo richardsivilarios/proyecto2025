@@ -1,0 +1,25 @@
+@startuml
+actor Usuario
+boundary "Vue (AddPersona.vue)" as Vue
+control "Axios" as Ax
+participant "PersonalController\n(taller1.grupo.vueadmin.system.controller)" as C
+participant "PersonalService\n(taller1.grupo.vueadmin.system.service)" as S
+control "PersonalMapper/Repository\n(taller1.grupo.vueadmin.system.mapper)" as M
+database "PostgreSQL\nschema: academico/public" as DB
+
+Usuario -> Vue : Completa formulario y pulsa "Guardar"
+Vue -> Vue : Validación local (requeridos, formato)
+Vue -> Ax : POST /api/personal {payload}
+Ax -> C : POST /api/personal
+C -> S : validarReglas(payload)
+S -> M : existsUserId(payload.idusuario)?
+M -> DB : SELECT id FROM public.sys_user WHERE id=?
+DB --> M : resultado
+S -> M : INSERT academico.personal(...)
+M -> DB : INSERT ...
+DB --> M : OK
+S -> C : DTO creado (201)
+C --> Ax : 201 Created {idusuario}
+Ax --> Vue : OK
+Vue -> Usuario : Toast éxito / navegar a listado
+@enduml

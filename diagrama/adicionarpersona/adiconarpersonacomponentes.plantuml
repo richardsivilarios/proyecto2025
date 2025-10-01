@@ -1,0 +1,38 @@
+@startuml
+package "taller1.grupo.vueadmin" {
+  package common {
+    package utils      as COMMON_UTILS
+    package constant   as COMMON_CONST
+  }
+  package config       as APP_CONFIG
+  package logs         as APP_LOGS
+  package system       as SYS {
+    package controller as SYS_CTRL
+    package entity     as SYS_ENT
+    package mapper     as SYS_MAP
+    ' (si usas service/service.impl, puedes añadirlos aquí)
+  }
+  package constant     as APP_CONST
+  package common       as APP_COMMON
+}
+
+' Dependencias típicas de capas
+SYS_CTRL --> SYS_ENT
+SYS_CTRL --> COMMON_UTILS
+SYS_CTRL --> APP_CONST
+
+SYS_CTRL --> SYS_MAP : usa
+SYS_MAP  --> SYS_ENT
+
+APP_LOGS ..> SYS_CTRL : AOP (cross-cutting)
+APP_LOGS ..> SYS_MAP  : AOP (mappers)
+
+APP_CONFIG ..> SYS_CTRL
+APP_CONFIG ..> SYS_MAP
+APP_CONFIG ..> COMMON_UTILS
+
+' (opcional) hacia base de datos
+database "PostgreSQL" as DB
+SYS_MAP --> DB
+
+@enduml

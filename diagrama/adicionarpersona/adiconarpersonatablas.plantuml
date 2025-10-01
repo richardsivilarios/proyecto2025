@@ -1,0 +1,42 @@
+@startuml
+skinparam shadowing false
+skinparam roundcorner 10
+hide circle
+title ER – Alta de Persona (fragmento)
+
+entity "public.sys_user" as sys_user {
+  * id : bigint
+  --
+  username : varchar
+  email : varchar
+  password : varchar
+  enabled : boolean
+}
+
+entity "academico.personal" as personal {
+  * idusuario : bigint
+  --
+  nombre : varchar(100)
+  ap : varchar(100)
+  am : varchar(100)
+  estado : int2
+  fnac : date
+  ecivil : varchar(30)
+  genero : varchar(10)
+  dir : varchar(200)
+  telf : varchar(30)
+  tipo : varchar(30)
+  foto : varchar(255)
+  create_time : timestamp
+  update_time : timestamp
+}
+
+entity "academico.datos" as datos {
+  * cod : bigint
+  --
+  cedula : bigint
+}
+
+sys_user ||--|| personal : id ↔ idusuario
+personal ||--|| datos : idusuario ↔ cod
+@enduml

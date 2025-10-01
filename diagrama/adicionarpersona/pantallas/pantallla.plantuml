@@ -1,0 +1,18 @@
+@startsalt
+{+
+  "Nueva Persona (academico.personal)"
+  [ idusuario        | ____________ ]
+  [ nombre*          | ____________ ]
+  [ ap               | ____________ ]
+  [ am               | ____________ ]
+  [ fnac (yyyy-mm-dd)| ____________ ]
+  [ genero           | ( ) M  ( ) F ]
+  [ ecivil           | [ soltero |▼] ]
+  [ dir              | ___________________________ ]
+  [ telf             | ____________ ]
+  [ tipo             | [ docente |▼] ]
+  [ foto (url)       | ___________________________ ]
+  [ cedula (datos)   | ____________ ]
+  {  [ Cancelar ] | [ Guardar ]  }
+}
+@endsalt

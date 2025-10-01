@@ -1,0 +1,24 @@
+@startuml
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam state {
+  BackgroundColor #F0F7FF
+  BorderColor #336699
+}
+
+[*] --> Nueva
+
+Nueva : Datos mínimos registrados
+Nueva --> Activa : Validación OK\nUsuario vinculado
+Activa : Persona en uso (docente/estudiante)
+
+Activa --> Inactiva : Marcado baja lógica\n(estado=0)
+Inactiva : No participa en programación/dictado
+
+Inactiva --> Reactivada : Rehabilitación
+Reactivada --> Activa
+
+Activa --> Eliminada : Borrado físico (solo admin)
+Eliminada : Registro removido
+
+@enduml
