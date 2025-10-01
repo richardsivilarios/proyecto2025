@@ -3,7 +3,7 @@ server:
 spring:
   sql:
     init:
-      mode: always   # ejecuta schema.sql/data.sql siempre al arrancar
+      mode: always    # ejecutas schema.sql/data.sql siempre al arrancar
       continue-on-error: true
   jpa:
     database: postgresql
