@@ -20,7 +20,8 @@ public class CaptchaConstants {
     /**
      * Minutos del período de validez del código de verificación.
      */
-    public static Long expiration = 2L;
+    //public static Long expiration = 2L;
+    public static Long expiration = 15L;
     /**
      * Longitud del contenido del código de verificación
      */

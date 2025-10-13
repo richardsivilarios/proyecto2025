@@ -67,12 +67,12 @@ module.exports = defineConfig({
       scss: {
         additionalData: `
           @use "sass:math";
-          @import "@/styles/quasar.variables.sass"; // Importa variables personalizadas de Quasar
+          @import "@/styles/quasar.variables.scss"; // Importa variables personalizadas de Quasar
         `
       },
       sass: {
         additionalData: `
-          @import "@/styles/quasar.variables.sass"; // Importa variables personalizadas de Quasar para sintaxis .sass
+          @import "@/styles/quasar.variables.sass" // Importa variables personalizadas de Quasar para sintaxis .sass
         `
       }
     }

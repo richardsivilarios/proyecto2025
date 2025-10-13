@@ -1,37 +1,52 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-page-container>
-      <div class="q-pa-md">
+     <q-page-container>
+      <div id="q-app" style="min-height: 100vh;">
+<div class="q-pa-md full-width full-height">
         <q-table
+         class="my-sticky-header-column-table"
+      flat bordered
+          title="Detalle de Clientes"
           color="primary"
-          card-class="bg-amber-5 text-brown"
+          
           table-class="text-grey-8"
           table-header-class="text-brown"
-          flat
-          bordered
+        
           ref="tableRef"
-          title="Detalle de Clientes"
           :rows="state.tableData"
           :columns="columns"
           row-key="idcliente"
-          v-model:pagination="pagination"
+          virtual-scroll
           :loading="loading"
           :filter="state.blurry"
           binary-state-sort
-          @request="onRequest"
           :visible-columns="visibleColumns"
+          :rows-per-page-options="[0]"
         >
-          <template v-slot:top>
-            <q-btn icon="new">Nuevo</q-btn>
-            <q-space />
+          <template v-slot:top-left>
+            <q-btn
+              color="primary"
+              icon="add"
+              label="Nuevo Cliente"
+              @click="onEdit()"
+            />
+            
           </template>
+
           <template v-slot:top-right>
-            <q-input borderless dense debounce="300" v-model="state.blurry" placeholder="Buscar">
+            <q-input
+              borderless
+              dense
+              debounce="300"
+              v-model="state.blurry"
+              placeholder="Buscar"
+            >
               <template v-slot:append>
                 <q-icon name="search" @click="getModulo1DClientesTableFun" />
               </template>
             </q-input>
           </template>
+
           <template v-slot:body-cell-actions="props">
             <q-td :props="props">
               <q-btn
@@ -46,16 +61,6 @@
                 class="q-mr-sm"
               />
               <q-btn
-                @click="onDelete(props.row)"
-                fab-mini
-                dense
-                square
-                outline
-                icon="delete"
-                color="negative"
-                aria-label="Eliminar"
-              />
-              <q-btn
                 @click="onPedidos(props.row)"
                 fab-mini
                 dense
@@ -68,11 +73,15 @@
             </q-td>
           </template>
         </q-table>
-        <q-pagination
-          v-model="pagination.page"
-          :max="Math.ceil(state.total / pagination.rowsPerPage)"
-          @update:model-value="getModulo1DClientesTableFun"
-        />
+    </div>    
+         <pagination 
+    v-model:current="state.current" 
+    v-model:size="state.size" 
+    v-model:total="state.total" 
+    @get-list="getModulo1DClientesTableFun">
+  </pagination>
+
+    
       </div>
 
       <!-- Componente de pedidos -->
@@ -81,74 +90,118 @@
         :cliente-obj="state.selectedCliente"
         @close="pedidoDialogVisible = false"
       />
+
+      <!-- Componente de edición -->
+      <editDClientes
+        v-model="clienteDialogVisible"
+        :cliente-obj="state.selectedCliente"
+        @close="onDialogClose"
+      />
     </q-page-container>
   </q-layout>
 </template>
 
 <script setup>
-import { ref, reactive, onMounted } from 'vue';
-import { getModulo1DClientesTable, delModulo1 } from '../../../api/modulo1/modulo1';
-import { errorMsg } from '../../../utils/message';
-import { useQuasar } from 'quasar';
-import pedidoDclientes from './pedidoDclientes.vue';
+import { ref, reactive, onMounted } from 'vue'
+import { getModulo1DClientesTable } from '../../../api/modulo1/modulo1'
+import { errorMsg } from '../../../utils/message'
+import pedidoDclientes from './pedidoDclientes.vue'
+import editDClientes from './editDClientes.vue'
+import Pagination from '../../../components/Pagination.vue'
 
-const $q = useQuasar();
 const state = reactive({
   blurry: '',
   tableData: [],
+  userObj: {},
   current: 1,
   size: 10,
   total: 0,
   selectedCliente: null,
-});
+})
 
 const columns = [
   { name: 'idcliente', label: 'ID Cliente', align: 'center', field: 'idcliente', sortable: true },
   { name: 'nombre', label: 'Nombre', align: 'left', field: 'nombre', sortable: true },
   { name: 'actions', label: 'Acciones', align: 'center', field: 'actions', sortable: false },
-];
+]
 
-const visibleColumns = ref(['idcliente', 'nombre', 'actions']);
-const loading = ref(false);
-const pagination = ref({ sortBy: 'nombre', descending: false, page: 1, rowsPerPage: 10 });
+const visibleColumns = ref(['idcliente', 'nombre', 'actions'])
+const loading = ref(false)
+// const pagination = ref({ sortBy: 'nombre', descending: false, page: 1, rowsPerPage: 10 })
+const pedidoDialogVisible = ref(false)
+const clienteDialogVisible = ref(false)
 
-const pedidoDialogVisible = ref(false);
-
+// 🔹 Cargar tabla
 const getModulo1DClientesTableFun = () => {
-  loading.value = true;
+  loading.value = true
   const params = {
     blurry: state.blurry,
     size: state.size,
-    currentPage: pagination.value.page,
-  };
+    currentPage: state.current
+  }
   getModulo1DClientesTable(params)
     .then((res) => {
-      loading.value = false;
+      loading.value = false
       if (res.success) {
-        state.tableData = res.data.records;
-        state.total = res.data.total;
+        state.tableData = res.data.records
+        state.total = res.data.total
       } else {
-        errorMsg(res.msg);
+        errorMsg(res.msg)
       }
     })
     .catch(() => {
-      loading.value = false;
-      errorMsg('Error al cargar los datos');
-    });
-};
+      loading.value = false
+      errorMsg('Error al cargar los datos')
+    })
+}
 
+// 🔹 Ver pedidos
 const onPedidos = (row) => {
-  //console.log('richard sivila:', row.idcliente);
-  
-  if (!row || !row.idcliente) return;
-  state.selectedCliente = { ...row }; // Asignar cliente seleccionado
-  
-  //console.log('state.selectedCliente');
-  //console.log(state.selectedCliente);
-  pedidoDialogVisible.value = true; // Mostrar diálogo
-};
+  if (!row || !row.idcliente) return
+  state.selectedCliente = { ...row }
+  pedidoDialogVisible.value = true
+}
+
+// 🔹 Editar o crear cliente
+const onEdit = (row) => {
+  if (!row) {
+    // Nuevo cliente
+    state.selectedCliente = {}
+  } else {
+    // Editar
+    state.selectedCliente = { ...row }
+  }
+  clienteDialogVisible.value = true
+}
+
+// 🔹 Al cerrar el diálogo, recargar la tabla
+const onDialogClose = () => {
+  clienteDialogVisible.value = false
+  getModulo1DClientesTableFun()
+}
 
 onMounted(() => {
-  getModulo1DClientesTableFun();
-});
+  getModulo1DClientesTableFun()
+})
 </script>
+<style lang="sass">
+.my-sticky-header-column-table
+  height: 80vh
+  width: 100%
+  max-width: 100%
+  background: white
+
+  tr th
+    position: sticky
+    z-index: 2
+    background: #00b4ff
+
+  thead tr:first-child th
+    top: 0
+    z-index: 3
+
+  td:first-child, th:first-child
+    position: sticky
+    left: 0
+    background-color: #e0f7ff
+</style>

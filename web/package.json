@@ -1,5 +1,5 @@
 {
-  "name": "quasardesign",
+  "name": "web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -16,22 +16,20 @@
     "element-plus": "^2.3.7",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.7.0",
-    "global": "^4.4.0",
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.1.0",
     "quasar": "^2.16.0",
     "quasardesign": "file:",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
-    "web": "file:",
-    "yarn": "^1.22.22"
+    "web": "file:"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
-    "sass": "^1.33.0",
+    "sass": "^1.93.2",
     "sass-loader": "^12.0.0",
     "unplugin-auto-import": "^0.11.4",
     "unplugin-vue-components": "^0.22.9",

@@ -1,110 +1,105 @@
 <template>
-  <q-dialog v-model="visible">
-    <q-card class="myClass">
-      <q-card-section>
-        <div class="text-h6">{{ state.title }}</div>
+  <q-dialog v-model="dialogVisible" persistent>
+    <q-card style="min-width: 500px">
+      <q-card-section class="text-h6">
+        {{ form.idcliente ? 'Editar Cliente' : 'Nuevo Cliente' }}
       </q-card-section>
 
       <q-card-section>
-        <q-form @submit="submitForm">
-          <q-input v-model="state.form.idcliente" label="Id" :disable="true" />  <!-- Campo Id deshabilitado -->
-          <q-input v-model="state.form.compania" label="Compañía" />
-          <q-input v-model="state.form.apellidos" label="Apellidos" />
-          <q-input v-model="state.form.nombre" label="Nombre" />
-          <q-input v-model="state.form.numerofax" label="Numero fax" />
-          <!-- ...otros campos del formulario... -->
-        </q-form>
+        <div class="q-gutter-md">
+          <q-input v-model="form.nombre" label="Nombre" />
+          <q-input v-model="form.apellidos" label="Apellidos" />
+          <q-input v-model="form.compania" label="Compañía" />
+          <q-input v-model="form.cargo" label="Cargo" />
+          <q-input v-model="form.telefono" label="Teléfono" />
+          <q-input v-model="form.email" label="Correo electrónico" />
+        </div>
       </q-card-section>
 
       <q-card-actions align="right">
-        <q-btn flat label="Cancelar" color="negative" @click="visible = false" />
-        <q-btn flat label="Guardar" color="primary" @click="submitForm" />
+        <q-btn flat label="Cancelar" color="negative" @click="cerrarDialogo" />
+        <q-btn flat label="Guardar" color="primary" @click="guardarCliente" />
       </q-card-actions>
     </q-card>
   </q-dialog>
 </template>
 
 <script setup>
-import { ref, reactive, computed, watch } from 'vue';
-import { editCliente } from '../../../api/modulo1/modulo1';
+import { reactive, watch, computed } from 'vue'
+import { editModulo1 } from '../../../api/modulo1/modulo1'
+import { successMsg, errorMsg } from '../../../utils/message'
+
+// Props desde index.vue
 const props = defineProps({
-  modelValue: {
-    type: Boolean,
-    required: true,
+  modelValue: { type: Boolean, default: false },
+  clienteObj: { type: Object, default: () => ({}) },
+})
+
+// Emit para controlar el v-model
+const emit = defineEmits(['update:modelValue', 'close'])
+
+// Computed para vincular el diálogo
+const dialogVisible = computed({
+  get: () => props.modelValue,
+  set: (val) => emit('update:modelValue', val),
+})
+
+// Estado del formulario
+const form = reactive({
+  idcliente: null,
+  nombre: '',
+  apellidos: '',
+  compania: '',
+  cargo: '',
+  telefono: '',
+  email: '',
+})
+
+// 🔹 Sincroniza datos al abrir
+watch(
+  () => props.clienteObj,
+  (nuevo) => {
+    if (nuevo) Object.assign(form, nuevo)
   },
-  clienteObj: {
-    type: Object,
-    required: true,
+  { immediate: true }
+)
+
+// 🔹 Limpia al crear uno nuevo
+watch(
+  () => props.modelValue,
+  (visible) => {
+    if (visible && !props.clienteObj?.idcliente) {
+      Object.keys(form).forEach((k) => (form[k] = ''))
+      form.idcliente = null
+    }
   }
-});
+)
 
-const emit = defineEmits(['update:dialogVisible', 'get-list']);
+// 🔹 Cerrar diálogo
+const cerrarDialogo = () => {
+  emit('update:modelValue', false)
+  emit('close')
+}
 
-const visible = computed({
-  get: () => props.dialogVisible,
-  set: (val) => emit('update:dialogVisible', val)
-});
-
-const state = reactive({
-  title: 'Editar Cliente',
-  form: {
-    idcliente: null,
-    compania: '',
-    apellidos: '',
-    nombre: '',
-    email: '',
-    cargo: '',
-    telefonoTrabajo: '',
-    telefonoParticular: '',
-    telefonoMovil: '',
-    numeroFax: '',
-    direccion: '',
-    ciudad: '',
-    estadoProvincia: '',
-    codigoPostal: '',
-    paisRegion: '',
-    paginaWeb: '',
-    notas: '',
-    datosAdjuntos: ''
-  }
-});
-
-// Observa los cambios en el cliente seleccionado
-watch(() => props.clienteObj, (newCliente) => {
-  if (newCliente && newCliente.idcliente) {
-    openFun();  // Actualiza los datos del formulario
-  }
-});
-
-const openFun = () => {
-  if (props.clienteObj.idcliente) {
-    state.title = 'Editar Cliente';
-    state.form = { ...props.clienteObj };  // Asigna los datos del cliente al formulario
-  }
-};
-
-const submitForm = () => {
-  emit('get-list', state.form);  // Envía los datos actualizados
-
-  visible.value = false;
-  console.log('se presiono aceptar');
-  editCliente(state.form) .then(res => {
-    if (res.success) {
-     
-      console.log('los datos se guardaron correctamente');
+// 🔹 Guardar (nuevo o editar)
+const guardarCliente = async () => {
+  try {
+    if (form.idcliente) {
+      // modificar
+      const res = await editModulo1(form)
+      if (res.success) successMsg('Cliente actualizado correctamente')
+      else errorMsg(res.msg || 'Error al actualizar cliente')
     } else {
-      errorMsg(res.msg);
+      // nuevo
+      const res = await editModulo1(form)
+      if (res.success) successMsg('Cliente registrado correctamente')
+      else errorMsg(res.msg || 'Error al registrar cliente')
     }
 
-  } ).catch(() => {
-    loading.value = false;
-  });
-};
-</script>
-
-<style>
-.myClass {
-  max-width: 1200px;
-  width: 100%;
+    cerrarDialogo()
+  } catch (err) {
+    console.error(err)
+    errorMsg('Error al guardar cliente')
+  }
 }
-</style>
+</script>

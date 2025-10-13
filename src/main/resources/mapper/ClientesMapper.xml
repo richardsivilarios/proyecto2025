@@ -10,8 +10,8 @@
   </resultMap>
 
      <select id="queryClientesTable" resultMap="clientesResult">
-        SELECT t1."Id", t1."Compañía", 
-        t1."Apellidos", t1."Nombre"
+        SELECT t1."Id" as id, t1."Compañía", 
+        t1."Apellidos", t1."Nombre" as nombre
         FROM northwind."Clientes" t1
         <where>
             <if test="blurry != null and blurry != ''">

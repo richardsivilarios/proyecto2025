@@ -7,16 +7,20 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import taller1.grupo.vueadmin.common.utils.BaseEntity;
+import java.time.LocalDate;
+@Builder
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+
 @TableName(value = "personal", schema = "academico")
-public class Personal {
+public class Personal extends BaseEntity {
     /*
      * * idusuario integer NOT NULL,
     * *nombre character varying(100) COLLATE pg_catalog."default" NOT NULL,
@@ -35,30 +39,21 @@ public class Personal {
      */
     @TableId(value = "idusuario", type = IdType.AUTO)
     private Long idusuario;
-
     @TableField("nombre")
     private String nombre;
-
     @TableField("ap")
     private String ap;
-
     @TableField("am")
     private String am;
-
     @TableField("estado")
     private Integer estado;
-    
     @TableField("fnac")
-    private LocalDateTime fnac;
-
+    private LocalDate fnac;
     @TableField("ecivil")
-    private LocalDateTime ecivil;
-
-    
+    private String ecivil;
     @TableField("genero")
     private String genero;
 
-    
     @TableField("dir")
     private String dir;
 

@@ -1,6 +1,7 @@
 package taller1.grupo.vueadmin.system.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
@@ -42,7 +43,6 @@ public class ClientesServiceImpl implements ClientesService {
 
         return clientesMapper.selectList(wrapper);
     }
-
     @Override
     public IPage<ClientesDto> queryClientesTable(QueryDto queryDto) {
         Page<ClientesDto> page = new Page<>();
@@ -123,9 +123,15 @@ public class ClientesServiceImpl implements ClientesService {
         clientes.setNotas(clientes2Dto.getNotas());
         clientes.setDatosAdjuntos(clientes2Dto.getDatosAdjuntos());
         if (clientes.getIdcliente() != null) {
+
             clientesMapper.updateById(clientes);
         } else {
-            clientesMapper.insert(clientes);
+            QueryWrapper<Clientes> query = new QueryWrapper<>();
+           
+            clientes.setIdcliente(clientesMapper.selectCount(query));
+             System.out.print("total cliente:"+clientesMapper.selectCount(query).toString());
+             System.out.print("insertar cliente:"+clientes.toString());
+             clientesMapper.insert(clientes);
         }
     }
 

@@ -29,13 +29,13 @@
               </q-input>
             </template>
       <!--CRUD-->
-    <!--  <template v-slot:body-cell-actions="props">
+    <template v-slot:body-cell-actions="props">
         <q-td :props="props">
           <q-btn @click="onEdit(props.row)" fab-mini dense square outline icon="mode_edit" color="primary" aria-label="Edit" class="q-mr-sm" />
           <q-btn @click="onDelete(props.row)" fab-mini dense square outline icon="delete" color="negative" aria-label="Delete" />
         </q-td>
       </template>
-      -->
+      
           </q-table>
           <q-pagination
             v-model="pagination.page"
@@ -146,12 +146,12 @@
     console.log('estado modulo1');
     console.log(state);
   });
-  /* const onEdit = (row) => {
+   const onEdit = (row) => {
       console.log('editar'+row.idpedido)
     }
     
     async function onDelete(prop) {
     console.log('eliminar'+prop.idpedido);
-  }*/
+  }
   </script>
   
