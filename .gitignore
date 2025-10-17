@@ -39,6 +39,7 @@ build/
 
 ### Frontend exclusions ###
 node_modules
+dist_electron
 /dist
 .DS_Store
 
