@@ -70,7 +70,7 @@ if (res.success) {
 .catch(()=>{
     //loading.value= false
     errorMsg('Error al cargar los datos')
-})}
+})}  
 
 const onEdit = () => {
     console.log('ADICIONAR UN USUARIO')
