@@ -5,7 +5,6 @@ import javax.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import jakarta.annotation.Resource;
 import taller1.grupo.vueadmin.common.exception.BadRequestException;
-import taller1.grupo.vueadmin.common.utils.ResultUtil;
 import taller1.grupo.vueadmin.system.entity.dto.PersonaUpsertDTO;
 import taller1.grupo.vueadmin.system.entity.vo.PersonaVO;
 import taller1.grupo.vueadmin.system.service.PersonalService;

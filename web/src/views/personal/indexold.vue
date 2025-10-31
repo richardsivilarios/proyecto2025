@@ -236,13 +236,13 @@ const onPageChange = ({page, rowsPerPage}) => {
 }
 
 const onStatusFilterChange = () => {
-    state.current = 1
-    queryUsuarioTableFun()
+ state.current = 1
+ queryUsuarioTableFun()
 }
 
 const onTypeFilterChange = () => {
-    state.current = 1
-    queryUsuarioTableFun()
+ state.current = 1
+ queryUsuarioTableFun()
 }
 
 // Funcion principal para consultar la tabla
@@ -258,7 +258,7 @@ const queryUsuarioTableFun = () => {
         size: state.size,
         currentPage: state.current,
         status: statusParam, 
-        type: typeParam,    
+        type: typeParam, 
     }
     
     queryUsuarioTable(params)
@@ -370,7 +370,7 @@ const onView = (row) => {
 }
 
 onMounted(() => {
-    // CORREGIDO: Se usa el nombre de función correcto
-    queryUsuarioTableFun() 
+  // CORREGIDO: Se usa el nombre de función correcto
+ queryUsuarioTableFun() 
 })
 </script>

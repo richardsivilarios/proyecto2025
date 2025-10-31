@@ -1,5 +1,8 @@
-import request from "../../utils/request";
+// Archivo: web/src/api/usuario/usuario.js
 
+import request from '../../utils/request'
+
+// Consulta principal
 export function queryUsuarioTable(params){
     return request({
         //url: '/api/sys/clientes/list',
@@ -9,23 +12,27 @@ export function queryUsuarioTable(params){
     })
 }
 
-// cambiar estado del usuario 
-export function estadoUsuario(data){
+// Obtener la lista de sys_user que no tienen datos de Personal
+export function querySysUsersForSelection() {
     return request({
-        url: '/api/sys/usuario/estado/edit',
+        url: '/sys/usuario/sys-users-unassigned', // URL adaptada
+        method: 'get'
+    })
+}
+
+// Obtener detalles completos de un usuario para edición
+export function getUsuarioDetails(idusuario) {
+    return request({
+        url: `/sys/usuario/details/${idusuario}`, // URL adaptada
+        method: 'get'
+    })
+}
+
+// Guardar o actualizar los datos del usuario (Upsert)
+export function editUsuario(data) {
+    return request({
+        url: '/sys/usuario/edit', // URL adaptada
         method: 'post',
         data
     })
 }
-
-export function editUsuario(data){
-// editar y adicionar 
-    return request({
-        url: '/api/sys/usuario/edit',
-        method: 'post',
-        data
-    })
-}
-
-
-
