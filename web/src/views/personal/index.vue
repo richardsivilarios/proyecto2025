@@ -1,5 +1,5 @@
 <template>
-<!--personal-->
+<!--personal q-table-->
 <q-layout view="hHh lpR fFf">
      <q-page-container>
       <div>
