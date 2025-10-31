@@ -28,7 +28,7 @@
 import {ref, reactive, onMounted} from 'vue'
 import {queryUsuarioTable} from '../../api/usuario/usuario'
 import {errorMsg} from '../../utils/message'
-
+import { date } from 'quasar'
 // ESTADO DE LA TABLA
 const state = reactive ({
     blurry:'',
@@ -42,9 +42,13 @@ const state = reactive ({
 
 const columns = [
  {name:'idusuario',label:'Id Usuario',align:'center',field:'idusuario',sortable:true},
- {name:'nombre',label:'Nombre',align:'left',field:'nombre',sortable:true} ]
+ {name:'nombre',label:'Nombre',align:'left',field:'nombre',sortable:true},
+ {name:'cedula',label:'Cedula',align:'left',field:'cedula',sortable:true},
+ {name:'ap',label:'A Paterno',align:'left',field:'ap',sortable:true},
+ {name:'fnac',label:'Fecha Nac',align:'left',field:'fnac',sortable:true,format: val => date.formatDate(val, 'DD-MM-YYYY')}
+ ]
 
- const visibleColumns = ref(['idusuario','nombre'])
+ const visibleColumns = ref(['idusuario','nombre','cedula','ap','fnac'])
 
 // Funcion principal para consultar la tabla
 const queryUsuarioTableFun = () => {

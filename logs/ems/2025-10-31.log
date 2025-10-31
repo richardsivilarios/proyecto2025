@@ -37474,3 +37474,133 @@ Unconditional classes:
 2025-10-31 12:15:49.185 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 2025-10-31 12:16:19.190 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2025-10-31 12:16:19.191 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2025-10-31 12:16:49.205 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-10-31 12:16:49.206 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2025-10-31 12:17:04.723 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@456ebe0b: (connection has passed maxLifetime)
+2025-10-31 12:17:04.884 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9a99054
+2025-10-31 12:17:05.236 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5a5ac8ce: (connection has passed maxLifetime)
+2025-10-31 12:17:05.311 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d9605b9
+2025-10-31 12:17:14.446 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2ef93c2d: (connection has passed maxLifetime)
+2025-10-31 12:17:14.664 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58ede533
+2025-10-31 12:17:16.293 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2401575d: (connection has passed maxLifetime)
+2025-10-31 12:17:16.356 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@562a105e
+2025-10-31 12:17:18.514 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2ac6adad: (connection has passed maxLifetime)
+2025-10-31 12:17:18.585 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52158e43
+2025-10-31 12:17:19.217 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-10-31 12:17:19.219 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2025-10-31 12:17:19.273 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3d258ffc: (connection has passed maxLifetime)
+2025-10-31 12:17:19.342 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17171a65
+2025-10-31 12:17:20.530 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5ac7550a: (connection has passed maxLifetime)
+2025-10-31 12:17:20.582 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20e4b1c9
+2025-10-31 12:17:27.530 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3bfa214e: (connection has passed maxLifetime)
+2025-10-31 12:17:27.592 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12a8991c
+2025-10-31 12:17:39.099 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6bfba796: (connection has passed maxLifetime)
+2025-10-31 12:17:39.148 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e1247f4
+2025-10-31 12:17:44.837 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@bd458d9: (connection has passed maxLifetime)
+2025-10-31 12:17:44.916 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bd2320c
+2025-10-31 12:17:49.232 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-10-31 12:17:49.233 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2025-10-31 12:18:13.784 [http-nio-8415-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/usuario/table?blurry=&size=10&currentPage=1", parameters={masked}
+2025-10-31 12:18:13.796 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.828 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:13.845 [http-nio-8415-exec-8] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:13.862 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-10-31 12:18:13.862 [http-nio-8415-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@3d04ca63, success=true}]
+2025-10-31 12:18:13.862 [http-nio-8415-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-31 12:18:13.862 [http-nio-8415-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/usuario/table?blurry=&size=10&currentPage=1", parameters={masked}
+2025-10-31 12:18:13.879 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.895 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:13.912 [http-nio-8415-exec-9] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:13.912 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-10-31 12:18:13.912 [http-nio-8415-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@1e73009e, success=true}]
+2025-10-31 12:18:13.927 [http-nio-8415-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-31 12:18:13.930 [http-nio-8415-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:13.930 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.930 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/usuario/table?blurry=&size=10&currentPage=1", parameters={masked}
+2025-10-31 12:18:13.946 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:13.963 [http-nio-8415-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:13.987 [http-nio-8415-exec-10] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:13.987 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-10-31 12:18:13.987 [http-nio-8415-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@1bba1981, success=true}]
+2025-10-31 12:18:13.996 [http-nio-8415-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-31 12:18:14.005 [http-nio-8415-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/usuario/table?blurry=&size=10&currentPage=1", parameters={masked}
+2025-10-31 12:18:14.013 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.044 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:14.046 [http-nio-8415-exec-3] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:14.065 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-10-31 12:18:14.065 [http-nio-8415-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@6e5ab65a, success=true}]
+2025-10-31 12:18:14.065 [http-nio-8415-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-31 12:18:14.065 [http-nio-8415-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/usuario/table?blurry=&size=10&currentPage=1", parameters={masked}
+2025-10-31 12:18:14.080 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.096 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:14.113 [http-nio-8415-exec-2] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:14.130 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-10-31 12:18:14.130 [http-nio-8415-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5d96b626, success=true}]
+2025-10-31 12:18:14.130 [http-nio-8415-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-31 12:18:14.130 [http-nio-8415-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /sys/usuario/table?blurry=&size=10&currentPage=1
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/sys/usuario/table?blurry=&size=10&currentPage=1", parameters={masked}
+2025-10-31 12:18:14.146 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to taller1.grupo.vueadmin.system.controller.UsuarioController#queryUsuarioTable(QueryUsuarioDto)
+2025-10-31 12:18:14.163 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:14.180 [http-nio-8415-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-10-31 12:18:14.197 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-10-31 12:18:14.197 [http-nio-8415-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@6542f2ff, success=true}]
+2025-10-31 12:18:14.197 [http-nio-8415-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-31 12:18:19.241 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-10-31 12:18:19.241 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
