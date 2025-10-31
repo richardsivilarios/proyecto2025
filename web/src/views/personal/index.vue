@@ -10,17 +10,11 @@
           color="primary"
           table-class="text-grey-8"
           table-header-class="text-brown"
-        
-          ref="tableRef"
           :rows="state.tableData"
           :columns="columns"
           row-key="idusuario"
           virtual-scroll
-          :loading="loading"
-          :filter="state.blurry"
-          binary-state-sort
           :visible-columns="visibleColumns"
-          :rows-per-page-options="[0]"
         >
         </q-table>
 
@@ -63,7 +57,9 @@ const queryUsuarioTableFun = () => {
         blurry: state.blurry,
         size: state.size,
         currentPage: state.current,
+        // status activo inactivo todos
         status: statusParam, 
+        // TODOS DOCENTES ESTUDIANTES
         type: typeParam, 
     }
     queryUsuarioTable(params)
