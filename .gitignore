@@ -7,7 +7,7 @@ jdk*/
 *.zip
 *.tar.gz
 *.iso
-logs/ems/*
+/logs/ems/*
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
