@@ -10,6 +10,8 @@ import java.time.LocalDate;
  */
 @Data
 public class UsuarioDto {
+
+    // ES ES UNA PRUEBA qtableusuarios
     
     // Campos heredados de sys_user (solo para referencia y llave)
     private Long idusuario; // Corresponde a sys_user.id y datos.cod
