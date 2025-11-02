@@ -30,7 +30,7 @@ public interface UsuarioMapper extends BaseMapper<Personal> {
 "</if>",
 
 // Filtro por Estado (status)
-"<if test='dto.status != null'>",
+"<if test='dto.status != null and dto.status != 2'>",
 " AND p.estado = #{dto.status}", // Espacio normal antes de AND
 "</if>",
 // Filtro por Tipo de Personal (type)
