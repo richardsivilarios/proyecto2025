@@ -531,11 +531,3 @@ ALTER TABLE academico.general ADD CONSTRAINT  FKgeneral135885 FOREIGN KEY (ids) 
 ALTER TABLE academico.dicta ADD CONSTRAINT  FKdicta623284 FOREIGN KEY (codmat, codpar, gestion) REFERENCES academico.mapa (codmat, codpar, gestion);
 ALTER TABLE academico.dicta ADD CONSTRAINT  FKdicta863295 FOREIGN KEY (ids) REFERENCES "public".sys_user (id);
 ALTER TABLE academico.materia ADD CONSTRAINT  FKmateria609743 FOREIGN KEY (codn) REFERENCES academico.niveles (codn);
-
--- INICIALIZAR CAMPOS SEQUENCIALES 
-ALTER SEQUENCE sys_log_id_seq RESTART WITH 3302;
-ALTER SEQUENCE sys_menu_id_seq RESTART WITH 57;
-ALTER SEQUENCE sys_role_id_seq RESTART WITH 10;
-ALTER SEQUENCE sys_role_menu_id_seq RESTART WITH 36;
-ALTER SEQUENCE sys_role_user_id_seq RESTART WITH 22;
-ALTER SEQUENCE sys_user_id_seq RESTART WITH 12;

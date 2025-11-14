@@ -156,11 +156,59 @@ public class SysUserServiceImpl implements SysUserService {
      * @Author: starao
      * @Date: 2022/10/6
      */
-    @Override
+
+   @Override
     public void updatePassword(JSONObject jsonObject) {
         String password = jsonObject.getString("password");
         String newPassword = jsonObject.getString("newPassword");
         String confirmPassword = jsonObject.getString("confirmPassword");
+
+        // PASO CLAVE 1: Obtener el ID del usuario actualmente conectado como String.
+        String currentUserIdStr = SecurityUtil.getCurrentUserId();
+
+        // PASO CLAVE 2: Convertir el ID de String a Long (o Integer, si ese es su tipo de DB).
+        Long userId;
+        try {
+            // Se asume que el ID de la tabla sys_user es Long, que es estándar en Spring/MyBatis-Plus.
+            userId = Long.parseLong(currentUserIdStr);
+        } catch (NumberFormatException e) {
+            // Este error no debería ocurrir en un sistema autenticado, pero es un buen control de seguridad.
+            throw new BadRequestException("El ID de usuario obtenido es inválido. Por favor, vuelva a iniciar sesión.");
+        }
+
+        // PASO CLAVE 3: Obtener el usuario por el ID NUMÉRICO (resuelve el error de PSQLException).
+        // Esta línea es la que fallaba antes de la conversión.
+        SysUser user = sysUserMapper.selectById(userId);
+        
+        // Comprobar que el usuario exista
+        if (user == null) {
+            throw new BadRequestException("Usuario no encontrado o no existe en el sistema.");
+        }
+
+        String pwd = user.getPassword();
+        // Verificar contraseña original
+        if (!passwordEncoder.matches(password, pwd)) {
+            throw new BadRequestException("La contraseña original es incorrecta. Por favor, vuelve a entrar");
+        }
+        // Verificar nueva contraseña y confirmar contraseña
+        if (!newPassword.equals(confirmPassword)) {
+            throw new BadRequestException(
+                    "La nueva contraseña es diferente de la contraseña confirmada. Por favor, vuelve a entrar");
+        }
+        // Cambiar contraseña a nueva contraseña
+        user.setPassword(passwordEncoder.encode(newPassword));
+        sysUserMapper.updateById(user);
+    }
+
+
+
+
+    /* @Override
+    public void updatePassword(JSONObject jsonObject) {
+        String password = jsonObject.getString("password");
+        String newPassword = jsonObject.getString("newPassword");
+        String confirmPassword = jsonObject.getString("confirmPassword");
+        
 
         // Obtener el usuario actualmente conectado
         SysUser user = sysUserMapper.selectById(SecurityUtil.getCurrentUserId());
@@ -178,6 +226,7 @@ public class SysUserServiceImpl implements SysUserService {
         user.setPassword(passwordEncoder.encode(newPassword));
         sysUserMapper.updateById(user);
     }
+    */
 
     /**
      * @Description:Verificar nombre de usuario y apodo
