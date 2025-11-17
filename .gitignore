@@ -6,6 +6,8 @@ logs/ems/
 *.log
 # Backend exclusions
 bin
+bin/*
+
 # Nunca versionar el JDK
 # JDKs y binarios grandes
 Oracle_JDK-*/

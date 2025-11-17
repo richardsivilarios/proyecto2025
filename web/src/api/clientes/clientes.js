@@ -1,7 +1,7 @@
 import request from "../../utils/request";
 
 /**
- * Obtener lista de registro
+ * Obtener lista de registros
  * @param params
  * @returns {AxiosPromise}
  */
