@@ -5,7 +5,7 @@ logs/ems/
 # Opcional: Ignorar cualquier archivo que termine con .log, sin importar dónde esté
 *.log
 # Backend exclusions
-
+bin
 # Nunca versionar el JDK
 # JDKs y binarios grandes
 Oracle_JDK-*/
