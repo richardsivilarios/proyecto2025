@@ -1,3 +1,7 @@
+DROP SCHEMA public CASCADE; 
+DROP SCHEMA academico CASCADE;
+DROP SCHEMA northwind CASCADE; 
+
 CREATE SCHEMA IF NOT EXISTS public;
 ALTER SCHEMA public OWNER TO postgres;
 
