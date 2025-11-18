@@ -4,7 +4,7 @@ export const useStore = defineStore('ems', {
     persist: true,
     state: () => {
         return {
-            token: null,
+            token: null, 
             //  Refrescar token
             refreshToken: null,
             // Información del usuario que ha iniciado sesión actualmente
